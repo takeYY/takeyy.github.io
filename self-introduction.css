@@ -1,0 +1,15 @@
+body{
+    background-color: lightsalmon;
+}
+li{
+    margin: 10px;
+}
+a{
+    font-weight: bold;
+}
+.face{
+    color: black;
+}
+.back{
+    color:gray;
+}
