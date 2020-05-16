@@ -2,4 +2,4 @@
 my Web page
 
 ## URL
-https://takeyy.github.io/index
+https://takeyy.github.io
