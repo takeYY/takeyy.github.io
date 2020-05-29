@@ -1,5 +1,5 @@
-var header = document.getElementById("header");
-var degree = 0;
+const header = document.getElementById("header");
+let degree = 0;
 function rotateHeader() {
     degree = degree + 3;
     degree = degree % 360;
