@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>takeYYのHP</title>
+  <link rel="stylesheet" , href="css/normalize.css">
+  <link rel="stylesheet" , href="css/style.css">
+  <link rel="stylesheet" href="css/self-introduction.css">
+</head>
+
+<body background="images/background01.png" oncontextmenu="return false;">
+  <article>
+    <div id="page">
+      <div id="pageHead">
+        <header>
+          <div class="pageHeadNavi">
+            <nav class="navi">
+              <ul>
+                <li><a href="index.html">TOP</a></li>
+                <li><a href="hobby.html">趣味</a></li>
+                <li><a href="product.html">プロダクト</a></li>
+                <li><a href="related-links.html">関連リンク</a></li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+      </div>
+      <div id="heading-03">
+        <h1>プロダクト</h1>
+      </div>
+      <div id="pageBodySub">
+        <h2 id="header" class="face">takeyy</h2>
+        <script src="animation.js"></script>
+        <div><img id="icon" src="images/RamielScrew480x480.jpg" width="180" alt="takeyyのアイコン"></div>
+        <a class="twitter-timeline" data-lang="ja" data-height="700"
+          href="https://twitter.com/bot_about_movie?ref_src=twsrc%5Etfw">Tweets by bot_about_movie</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+      <div id="pageBodyMain">
+        <h1>映画情報自動ツイートbot</h1>
+        <div class="heading-01">
+          <script src="animation.js"></script>
+          <p class="animation">
+          <div class="show">
+            <h4>
+            <a href="https://twitter.com/bot_about_movie" target="_blank">映画ランキングbot</a>
+            </h4>
+            <img src="images/bot_about_movie.png" alt="映画情報自動ツイートの画面">
+            <p>
+              人気映画ランキング１位から21位までを１週間かけて自動でツイートするBot.<br>
+              ツイートしてくれる情報は以下の通り.
+              <ul>
+                <li>ランキング</li>
+                <li>映画タイトル</li>
+                <li>人気度</li>
+                <li>平均評価 (x/100)</li>
+                <li>評価信頼性</li>
+                <li>映画ポスター</li>
+              </ul>
+            </p>
+            <p>
+              <a href="https://developers.themoviedb.org/3/getting-started/introduction">TMDb API</a>のGet
+              Trendingメソッドと, Twitter REST APIを利用している.
+            </p>
+            <p>
+              サーバにRaspberry Piを使用し, Cronを用いてPythonプログラムを自動で実行している.<br>
+              日本時間の12時/15時/18時のランダムな分でツイート.
+            </p>
+            <p>
+              評価信頼性は収集した全評価数の4分位を計算している.<br>
+              第一四分位数までなら「極低」, 中央値までなら「低」,<br>
+              第三四分位数までなら「高」, それ以上なら「極高」としている.
+            </p>
+          </div>
+          </p>
+        </div>
+        <h1>周辺の映画館を教えてくれるLINE bot</h1>
+        <div class="heading-01">
+          <p class="animation">
+          <div class="show">
+            <h4>LINE bot about movie</h4>
+            <img src="images/LINEbot_about_movie.jpg" alt="LINE bot about movieの動作画像" width="300">
+            <img src="images/LINEbot_QRcode.png" alt="LINE botのQRコード" width="200">
+            <p>
+              LINEの位置情報を送信することによって, その周辺3km以内にある映画館を表示してくれるbot.<br>
+              LINEのMessaging APIとYahoo!のローカルサーチAPIを利用している.
+            </p>
+            <p>
+              現在は, 位置情報からのリクエストにしか対応できていないが,<br>
+              将来的には周囲の探索範囲の設定, 最近の映画や感情の入力によって合いそうな映画を紹介するといった機能を実現することを考えている.
+            </p>
+          </div>
+          </p>
+        </div>
+        <h1>その他</h1>
+        <div class="heading-01">
+          <p class="animation">
+            <div class="show">
+              <h4>開発中</h4>
+            </div>
+          </p>
+        </div>
+        <div id="pageFoot">
+          <footer>
+            <h3 id="pageFootHeading"></h3>
+            <p class="copyright"><small>&copy Copyright, 2020 All Rights Reserved</small></p>
+          </footer>
+        </div>
+      </div>
+  </article>
+  </div>
+</body>
+
+</html>
