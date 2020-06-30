@@ -1,0 +1,192 @@
+/* 本文用の書式 */
+body {
+	font-family: "メイリオ", "Meiryo", "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", sans-serif;
+        text-align:left;
+}
+p {
+	font-size:14px;
+	width:635px;
+}
+ul li{
+	font-size:17px;
+}
+
+#page {
+	width: 900px;
+	margin: 0 auto;
+}
+
+#pageBodyMain {
+        width:635px;
+        float:right;
+        padding:20px;
+        border-left:solid 5px tomato;
+        padding-bottom:20px;
+        margin:30px 0;
+}
+
+#pageBodySub {
+        width:180px;
+        padding:20px;
+        float:left;
+}
+
+#pageBodyFoot {
+        width:900px;
+        float:bottom;
+}
+
+/* pageHeadのデザイン */
+#pageHead {
+	margin-bottom: 35px;
+}
+/* ページトップにナビゲーションを入れる */
+.pageHeadNavi {
+	border-bottom: solid 2px tomato;
+	margin-bottom: 10px;
+}
+.pageHeadNavi .navi ul {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding: 0;
+}
+.pageHeadNavi .navi ul:after {
+	content: "";
+	clear: left;
+	display: block;
+}
+.pageHeadNavi .navi li {
+	list-style: none;
+	float: left;
+	width: 200px;
+	font-size: 18px;
+	color: tomato;
+	text-align: center;
+	border-left: solid 1px tomato;
+	padding: 0 11px;
+}
+.pageHeadNavi .navi li:first-child {
+	border-left: none;
+}
+.pageHeadNavi .navi a {
+	color: salmon;
+	text-decoration: none;
+	display: block; 
+	padding: 5px;
+	transition: all 300ms 0s ease;
+}
+.pageHeadNavi .navi a:hover {
+	background-color: darkred
+}
+
+/* pageFootのデザイン */
+#pageFoot {
+	margin-bottom: 35px;
+	width:655px;
+}
+#pageFoot ul li {
+	font-size: 15px;
+	list-style-type: square; 
+}
+
+
+
+/* 見出し */
+#pageHeadHeading {
+	font-size: 36px;
+	color: #FF0080;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+#pageFootHeading {
+  float:bottom;
+	font-size: 18px; 
+	color: #909090;
+	max-width: 600px;
+	margin-top: 20px;
+	border-bottom: solid 1px #909090;
+}
+
+/* 表の書式 */
+table {
+	/* 文字サイズ */
+	font-size: 12px;
+	/* 罫線は1pxの実線で灰色 */
+	border: 1px solid #CCCCCC;
+	/* 罫線と罫線の隙間をなくす */
+	border-collapse: collapse; 
+	/* 表の幅 */
+	width: 655px;
+}
+
+table th,
+table td {
+	/* 罫線は1pxの実線で灰色 */
+	border: 1px solid #CCCCCC;
+	/* 余白を上下に5px，左右に10px取る */
+	padding: 5px 10px;
+}
+
+table th {
+	/* 表の見出しの背景色 */
+	background-color: #EEEEEE;
+	/* 文字を中央寄せ */
+	text-align: center;
+}
+
+table caption {
+	/* 文字を中央寄せ */
+	text-align: center;
+	/* 太字化（ボールドタイプ） */
+	font-weight: bold;
+}
+
+
+/* 見出し用の書式 */
+.heading-01 { 
+  width:635px;
+	font-size: 26px; 
+	color: #303030; 
+	background-color: antiquewhite;
+	border-bottom: solid 3px tomato;
+	padding: 5px 10px;
+	word-break: normal;
+}
+
+.heading-02 { 
+  width:635px;
+  font-size: 26px;
+  text-align:left; 
+	color: #303030; 
+	background-color: #F2F2E5;
+	border-bottom: solid 3px tomato;
+	padding: 5px 10px;
+}
+
+#heading-03 { 
+  text-align:center;
+  padding: .25em 0 .5em .75em;
+  border-left:3px solid darkred;
+  border-right:3px solid darkred;
+  border-top:3px solid darkred;
+  border-bottom:3px solid darkred;
+}
+
+.heading-04{
+  width:655px;
+  font-size: 26px;
+  text-align:left; 
+	color: #303030; 
+	background-color: #F2F2E5;
+}
+
+.link{
+  text-align:center;
+  font-size:26px;
+}
+
+#copyright{
+  float:center;
+  text-align:center;
+}
