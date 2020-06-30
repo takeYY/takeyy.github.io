@@ -103,6 +103,8 @@ ul li{
   float:bottom;
 	font-size: 18px; 
 	color: #909090;
+	max-width: 600px;
+	margin-top: 20px;
 	border-bottom: solid 1px #909090;
 }
 
