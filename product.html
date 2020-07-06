@@ -10,38 +10,55 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
 </head>
 
-<body background="images/background01.png" oncontextmenu="return false;">
+<body style="padding-top: 4.5rem;" background="images/background01.png" oncontextmenu="return false;">
   <article>
     <div id="page">
-      <div id="pageHead">
-        <header>
-          <div class="pageHeadNavi">
-            <nav class="navi">
-              <ul>
-                <li><a href="index.html">TOP</a></li>
-                <li><a href="hobby.html">趣味</a></li>
-                <li><a href="product.html">プロダクト</a></li>
-                <li><a href="related-links.html">関連リンク</a></li>
-              </ul>
-            </nav>
+      <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+          <a class="navbar-brand" href="index.html">
+            <img src="./images/RamielScrew480x480.jpg" alt="takeYYのアイコン" width="30">
+            takeYY
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-header"
+            aria-controls="navbar-header" aria-expanded="false" aria-label="ナビゲーションの切替">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar-header">
+            <ul class="navbar-nav m-auto">
+              <li class="nav-item lead">
+                <a class="nav-link" href="index.html">トップ</a>
+              </li>
+              <li class="nav-item lead">
+                <a class="nav-link" href="hobby.html">趣味</a>
+              </li>
+              <li class="nav-item lead active">
+                <a class="nav-link" href="product.html">プロダクト</a>
+              </li>
+              <li class="nav-item lead">
+                <a class="nav-link" href="related-links.html">関連リンク</a>
+              </li>
+            </ul>
           </div>
-        </header>
-      </div>
+        </nav>
+      </header>
       <div id="heading-03">
         <h1>プロダクト</h1>
       </div>
       <div id="pageBodySub">
-        <h2 id="header" class="face">takeyy</h2>
+        <h2 id="header" class="face">takeYY</h2>
         <script src="animation.js"></script>
         <div><img id="icon" src="images/RamielScrew480x480.jpg" width="180" alt="takeyyのアイコン"></div>
-        <a class="twitter-timeline" data-lang="ja" data-height="700"
+        <a class="twitter-timeline" data-lang="ja" data-height="500"
           href="https://twitter.com/bot_about_movie?ref_src=twsrc%5Etfw">Tweets by bot_about_movie</a>
         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
       </div>
@@ -63,7 +80,7 @@
                 <div class="show">
                   <h3 class="card-title"><a href="https://twitter.com/bot_about_movie">映画ランキングbot</a></h3>
                   <p>
-                    人気映画ランキング１位から21位までを１週間かけて自動でツイートするBot.<br>
+                    人気映画ランキング１位から21位までを１週間かけて自動でツイートするbot.<br>
                     ツイートしてくれる情報は以下の通り.
                   <ul>
                     <li>ランキング</li>
@@ -79,7 +96,7 @@
                     Trendingメソッドと, Twitter REST APIを利用している.
                   </p>
                   <p>
-                    サーバにRaspberry Piを使用し, Cronを用いてPythonプログラムを自動で実行している.<br>
+                    サーバにRaspberry Piを使用し, Cronを用いてPythonプログラムを自動で実行している.
                     日本時間の12時/15時/18時のランダムな分でツイート.
                   </p>
                   <p>
@@ -93,47 +110,138 @@
             </div>
           </div>
           <div class="card alert-warning">
-            <div class="card-header" id="headingTwo">
+            <div class="card-header" id="heading2">
               <h1 class="mb-0">
-                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
-                  aria-expanded="false" aria-controls="collapseTwo">
-                  <div class="bg-dark text-white">周辺の映画館を教えてくれるLINE bot</div>
-                  <img class="img-thumbnail" src="images/LINEbot_about_movie.jpg" alt="LINE bot about movieの動作画像" width="250">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse2"
+                  aria-expanded="false" aria-controls="collapse2">
+                  <div class="bg-dark text-white">周辺の映画館やおすすめ映画を教えてくれるLINE bot</div>
+                  <img class="img-thumbnail" src="images/LINEbot_about_movie.jpg" alt="LINE bot about movieの動作画像"
+                    width="250">
                   <img class="img-thumbnail" src="images/LINEbot_QRcode.png" alt="LINE botのQRコード" width="200">
                 </button>
               </h1>
             </div>
-            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordionExample">
               <div class="card-body">
                 <p class="animation">
                 <div class="show">
                   <h3 class="card-title">LINE bot about movie</h3>
                   <p>
-                    LINEの位置情報を送信することによって, <br>
-                    指定した範囲,　または,　周辺3km以内にある映画館を表示してくれるbot.<br>
+                    LINEの位置情報を送信することによって,
+                    指定した範囲, または, 周辺3km以内にある映画館を表示してくれるbot.<br>
                     LINEのMessaging APIとYahoo!のローカルサーチAPIを利用している.
                   </p>
                   <p>
-                    現在は, 位置情報からのリクエストにしか対応できていないが,<br>
-                    将来的には周囲の探索範囲の設定, 最近の映画や感情の入力によって<br>
-                    合いそうな映画を紹介するといった機能を実現することを考えている.
+                    【初めての方へ】<br>
+                    初めて利用される場合は, 認証が必要です.<br>
+                    1. 「トークへのメッセージ送信」が許可されていることを確認してください.<br>
+                    2. 注意事項をよく読み, 画面下の「許可する」ボタンをタップしてください.
                   </p>
+                  <p>
+                    【使い方】<br>
+                    「映画」もしくは「#movie」を送信すると, 検索条件を聞かれるため, 
+                    「詳しく指定」もしくは「おすすめを検索」のどちらかを選択してください. 
+                    条件に合った映画をランダムで3作品表示します.
+                  </p>
+                  <p>
+                    その他機能に関しては, 「ヘルプ」を送信して確認してください.
+                  </p>
+                  <p>
+                    現在は, 位置情報からのリクエストとおすすめの映画紹介にしか対応できていないが, 
+                    将来的には最近の映画や感情の入力によって合いそうな映画を紹介するといった機能を実現することを考えている.
+                  </p>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/_B5pohJC1dE" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
                 </div>
                 </p>
               </div>
             </div>
           </div>
           <div class="card alert-warning">
-            <div class="card-header" id="headingThree">
+            <div class="card-header" id="heading3">
               <h1 class="mb-0">
-                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree"
-                  aria-expanded="false" aria-controls="collapseThree">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse3"
+                  aria-expanded="false" aria-controls="collapse3">
+                  <div class="bg-dark text-white">タイタニックの生存予測を行うWebアプリケーション</div>
+                </button>
+              </h1>
+            </div>
+            <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#accordionExample">
+              <div class="card-body">
+                <p class="animation">
+                <div class="show">
+                  <h3 class="card-title">タイタニック生存チャレンジ</h3>
+                  <p>
+                    あなたが何も知らずにタイタニック号に乗っていたら, 助かったかを予測するWebアプリケーションです.<br>
+                    FlaskとJinjaを利用して, 入力データから機械学習を用いて予測します.
+                  </p>
+                  <p>
+                    ※公開はしていません.ローカル環境です.<br>
+                    ※予測精度はあくまで目安であり, 正確ではありません.
+                  </p>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/xkIWJcdZEws" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card alert-warning">
+            <div class="card-header" id="heading4">
+              <h1 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse4"
+                  aria-expanded="false" aria-controls="collapse4">
+                  <div class="bg-dark text-white">三角形の五心(重心・内心・外心・垂心・傍心)の可視化</div>
+                </button>
+              </h1>
+            </div>
+            <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordionExample">
+              <div class="card-body">
+                <p class="animation">
+                <div class="show">
+                  <h3 class="card-title">Five Centroids of Triangle Visualization</h3>
+                  <p>
+                    【制作時期】<br>
+                    2019/01
+                  </p>
+                  <p>
+                    三角形の頂点をマウスのドラッグで動かすことができる.<br>
+                    三角形の五心（重心・外心・内心・垂心・傍心）は一直線になると言う数学の先生から吹き込まれた嘘を確かめるために制作しました。
+                    Processingを利用することで, プログラミングに馴染みのない人でも簡単に実行でき, 簡単なキーボード操作で五心の中で表示したい情報を選ぶことができます.
+                  </p>
+                  <p>
+                    【プロジェクト】<br>
+                    <a href="https://github.com/takeYY/fiveCentroids">GitHubのプロジェクトURL</a>
+                  </p>
+                  <p>
+                    【環境】<br>
+                    Processing 3.01
+                  </p>
+                  <p>
+                    【使い方】<br>
+                    Processingをインストールして, 実行ボタンを押下.
+                    三角形の頂点（A,B,C）はマウスのドラッグで移動可能.
+                    「J」キーで重心, 「G」キーで外心, 「N」キーで内心, 「S」キーで垂心, 「B」キーで傍心の特徴を表す線がそれぞれ描画される.
+                  </p>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/Q1QQiOt-vxU" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card alert-warning">
+            <div class="card-header" id="headingEtc">
+              <h1 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseEtc"
+                  aria-expanded="false" aria-controls="collapseEtc">
                   <div class="bg-dark text-white">その他</div>
                   <img class="img-thumbnail" src="images/earth.png" alt="開発中の画像">
                 </button>
               </h1>
             </div>
-            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div id="collapseEtc" class="collapse" aria-labelledby="headingEtc" data-parent="#accordionExample">
               <div class="card-body">
                 <p class="animation">
                 <div class="show">

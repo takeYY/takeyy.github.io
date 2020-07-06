@@ -20,31 +20,45 @@
         crossorigin="anonymous"></script>
 </head>
 
-<body background="images/background01.png" oncontextmenu="return false;">
+<body style="padding-top: 4.5rem;" background="images/background01.png" oncontextmenu="return false;">
     <article>
         <div id="page">
-            <div id="pageHead">
-                <header>
-                    <div class="pageHeadNavi">
-                        <nav class="navi">
-                            <ul>
-                                <li><a href="index.html">TOP</a></li>
-                                <li><a href="hobby.html">趣味</a></li>
-                                <li><a href="product.html">プロダクト</a></li>
-                                <li><a href="related-links.html">外部リンク</a></li>
-                            </ul>
-                        </nav>
+            <header>
+                <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="./images/RamielScrew480x480.jpg" alt="takeYYのアイコン" width="30">
+                        takeYY
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-header"
+                        aria-controls="navbar-header" aria-expanded="false" aria-label="ナビゲーションの切替">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbar-header">
+                        <ul class="navbar-nav m-auto">
+                            <li class="nav-item lead active">
+                                <a class="nav-link" href="index.html">トップ</a>
+                            </li>
+                            <li class="nav-item lead">
+                                <a class="nav-link" href="hobby.html">趣味</a>
+                            </li>
+                            <li class="nav-item lead">
+                                <a class="nav-link" href="product.html">プロダクト</a>
+                            </li>
+                            <li class="nav-item lead">
+                                <a class="nav-link" href="related-links.html">関連リンク</a>
+                            </li>
+                        </ul>
                     </div>
-                </header>
-            </div>
+                </nav>
+            </header>
             <div id="heading-03">
-                <h1>TOP</h1>
+                <h1>トップ</h1>
             </div>
             <div id="pageBodySub">
-                <h2 id="header" class="face">takeyy</h2>
+                <h2 id="header" class="face">takeYY</h2>
                 <script src="animation.js"></script>
-                <div><img id="icon" src="images/RamielScrew480x480.jpg" width="180" alt="takeyyのアイコン"></div>
-                <a class="twitter-timeline" data-lang="ja" data-height="1000"
+                <div><img id="icon" src="images/RamielScrew480x480.jpg" width="180" alt="takeYYのアイコン"></div>
+                <a class="twitter-timeline" data-lang="ja" data-height="500"
                     href="https://twitter.com/bot_about_movie?ref_src=twsrc%5Etfw">Tweets by bot_about_movie</a>
                 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
@@ -141,12 +155,12 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div id="pageFoot">
-                    <footer>
-                        <h3 id="pageFootHeading"></h3>
-                        <p class="copyright"><small>&copy Copyright, 2020 All Rights Reserved</small></p>
-                    </footer>
+                    <div id="pageFoot">
+                        <footer>
+                            <h3 id="pageFootHeading"></h3>
+                            <p class="copyright"><small>&copy Copyright, 2020 All Rights Reserved</small></p>
+                        </footer>
+                    </div>
                 </div>
             </div>
     </article>
