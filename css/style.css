@@ -165,7 +165,8 @@ table caption {
 }
 
 #heading-03 { 
-  text-align:center;
+	text-align:center;
+	color: lightskyblue;
   padding: .25em 0 .5em .75em;
   border-left:3px solid darkred;
   border-right:3px solid darkred;
@@ -189,4 +190,10 @@ table caption {
 #copyright{
   float:center;
   text-align:center;
+}
+
+.gradient{
+	padding-top: 4.5rem;
+	padding-bottom: 44rem;
+	background: radial-gradient(circle at bottom right, lightyellow 5%, orangered 30%, darkblue 70%, black);
 }
