@@ -2,349 +2,729 @@
 <html lang="ja">
 
 <head>
-    <meta charset="utf-8">
-    <title>takeYYのHP</title>
-    <link rel="stylesheet" , href="css/normalize.css">
-    <link rel="stylesheet" , href="css/style.css">
-    <link rel="stylesheet" href="css/self-introduction.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-        crossorigin="anonymous"></script>
+  <meta charset="utf-8">
+  <title>takeYYのHP</title>
+  <link rel="stylesheet" , href="css/style.css">
+  <link rel="stylesheet" href="css/self-introduction.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
 </head>
 
-<body class="gradient" oncontextmenu="return false;">
-    <article>
-        <div id="page">
-            <header>
-                <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-                    <a class="navbar-brand" href="index.html">
-                        <img src="./images/RamielScrew480x480.jpg" alt="takeYYのアイコン" width="30">
-                        takeYY
-                    </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-header"
-                        aria-controls="navbar-header" aria-expanded="false" aria-label="ナビゲーションの切替">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbar-header">
-                        <ul class="navbar-nav m-auto">
-                            <li class="nav-item lead active">
-                                <a class="nav-link" href="index.html">トップ</a>
-                            </li>
-                            <li class="nav-item lead">
-                                <a class="nav-link" href="hobby.html">趣味</a>
-                            </li>
-                            <li class="nav-item lead">
-                                <a class="nav-link" href="product.html">プロダクト</a>
-                            </li>
-                            <li class="nav-item lead">
-                                <a class="nav-link" href="related-links.html">関連リンク</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </header>
-            <div id="heading-03">
-                <h1>トップ</h1>
+<body data-spy="scroll" data-target="#my-navbar" data-offset="100" class="gradient" oncontextmenu="return false;">
+  <div class='shutter'></div>
+  <article>
+    <div id="page">
+      <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" id='my-navbar'>
+          <a class="navbar-brand" href="index.html">
+            <img src="./images/RamielScrew480x480.jpg" alt="takeYYのアイコン" width="30">
+            takeYY
+          </a>
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link active" href="#my-top">トップ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#my-hobby">趣味</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#my-product">プロダクト</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#my-link">関連リンク</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <div id='my-top'>
+        <div class="rounded-pill border border-danger mt-5 mb-3">
+          <h1 class='d-flex align-items-center justify-content-center text-danger'>トップ</h1>
+        </div>
+        <div class="accordion" id="accordionExample">
+          <div class="card alert-warning">
+            <div class="card-header" id="my-top-one">
+              <h1 class="mb-0">
+                <button class="btn btn-link text-dark" type="button" data-toggle="collapse" data-target="#collapseOne"
+                  aria-expanded="true" aria-controls="collapseOne">
+                  私の情報
+                </button>
+              </h1>
             </div>
-            <div id="pageBodySub">
-                <h2 id="header" class="face">takeYY</h2>
-                <script src="animation.js"></script>
-                <div><img id="icon" src="images/RamielScrew480x480.jpg" width="180" alt="takeYYのアイコン"></div>
-                <a class="twitter-timeline" data-lang="ja" data-height="500"
-                    href="https://twitter.com/bot_about_movie?ref_src=twsrc%5Etfw">Tweets by bot_about_movie</a>
-                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-            </div>
-            <div id="pageBodyMain">
-                <div class="accordion" id="accordionExample">
-                    <div class="card alert-warning">
-                        <div class="card-header" id="headingOne">
-                            <h1 class="mb-0">
-                                <button class="btn btn-link text-dark" type="button" data-toggle="collapse"
-                                    data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    私の情報
-                                </button>
-                            </h1>
-                        </div>
-                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-                            data-parent="#accordionExample">
-                            <div class="card-body">
-                                <p class="animation">
-                                <div class="show">
-                                    <ul>
-                                        <li>年齢：23</li>
-                                        <li>職業：学生</li>
-                                        <li>最近：HPをイケイケにするぜ！</li>
-                                    </ul>
-                                </div>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card alert-warning">
-                        <div class="card-header" id="headingTwo">
-                            <h1 class="mb-0">
-                                <button class="btn btn-link collapsed text-dark" type="button" data-toggle="collapse"
-                                    data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    技術
-                                </button>
-                            </h1>
-                        </div>
-                        <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo"
-                            data-parent="#accordionExample">
-                            <div class="card-body">
-                                <p class="animation">
-                                <div class="show">
-                                    開発経験
-                                    <ul>
-                                        <li>Python3</li>
-                                        <div class="progress">
-                                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0"
-                                                aria-valuemax="100">70%</div>
-                                        </div>
-                                        <ul>
-                                            <li>Twitter Bot(@bot_about_movie)</li>
-                                        </ul>
-                                        <li>Java</li>
-                                        <div class="progress">
-                                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0"
-                                                aria-valuemax="100">60%</div>
-                                        </div>
-                                        <ul>
-                                            <li>YouTubeの動画推薦システム</li>
-                                        </ul>
-                                        <li>Blender</li>
-                                        <div class="progress">
-                                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0"
-                                                aria-valuemax="100">40%</div>
-                                        </div>
-                                        <ul>
-                                            <li>5分のフルCG映像</li>
-                                        </ul>
-                                        <li>TypeScript</li>
-                                        <div class="progress">
-                                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 30%;" aria-valuenow="30" aria-valuemin="0"
-                                                aria-valuemax="100">30%</div>
-                                        </div>
-                                        <ul>
-                                            <li>THREE.jsでWebGL</li>
-                                        </ul>
-                                        <li>Raspberry Pi</li>
-                                        <div class="progress">
-                                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0"
-                                                aria-valuemax="100">50%</div>
-                                        </div>
-                                        <ul>
-                                            <li>Twitter Botのサーバ</li>
-                                            <li>電子ペーパの制御</li>
-                                        </ul>
-                                        <li>Node.js</li>
-                                        <div class="progress">
-                                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0"
-                                                aria-valuemax="100">50%</div>
-                                        </div>
-                                        <ul>
-                                            <li>
-                                                HubotでSlack Bot
-                                                <ul>
-                                                    <li>ランダムおみくじ</li>
-                                                    <li>todoリスト</li>
-                                                </ul>
-                                            </li>
-                                            <li>LINE bot about movie</li>
-                                        </ul>
-                                        </ur>
-                                </div>
-                                <div class="show">
-                                    勉強中
-                                    <ul>
-                                        <li>Ruby (on Rails)</li>
-                                        <div class="progress">
-                                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0"
-                                                aria-valuemax="100">70%</div>
-                                        </div>
-                                        <ul>
-                                            <li>Slim</li>
-                                            <div class="progress">
-                                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 80%;"
-                                                    aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
-                                            </div>
-                                            <li>Model</li>
-                                            <div class="progress">
-                                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 60%;"
-                                                    aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
-                                            </div>
-                                            <li>Controller</li>
-                                            <div class="progress">
-                                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 60%;"
-                                                    aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
-                                            </div>
-                                            <li>View</li>
-                                            <div class="progress">
-                                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 80%;"
-                                                    aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
-                                            </div>
-                                            <li>Rspec</li>
-                                            <div class="progress">
-                                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 70%;"
-                                                    aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
-                                            </div>
-                                        </ul>
-                                        <li>React</li>
-                                        <div class="progress">
-                                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 10%;" aria-valuenow="10" aria-valuemin="0"
-                                                aria-valuemax="100">10%</div>
-                                        </div>
-                                        <li>HTML</li>
-                                        <div class="progress">
-                                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0"
-                                                aria-valuemax="100">90%</div>
-                                        </div>
-                                        <li>CSS</li>
-                                        <div class="progress">
-                                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0"
-                                                aria-valuemax="100">80%</div>
-                                        </div>
-                                        <li>JavaScript</li>
-                                        <div class="progress">
-                                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0"
-                                                aria-valuemax="100">50%</div>
-                                        </div>
-                                        <li>Machine Learning</li>
-                                        <div class="progress">
-                                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0"
-                                                aria-valuemax="100">70%</div>
-                                        </div>
-                                        <li>Deep Learning</li>
-                                        <div class="progress">
-                                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 20%;" aria-valuenow="20" aria-valuemin="0"
-                                                aria-valuemax="100">20%</div>
-                                        </div>
-                                        <li>数学</li>
-                                        <div class="progress">
-                                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 60%;"
-                                                aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
-                                        </div>
-                                        <li>統計</li>
-                                        <div class="progress">
-                                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 50%;"
-                                                aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
-                                        </div>
-                                        <li>確率</li>
-                                        <div class="progress">
-                                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 60%;"
-                                                aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
-                                        </div>
-                                        <li>Kaggle</li>
-                                        <li>SIGNATE</li>
-                                        <li>AtCoder</li>
-                                        <li>データサイエンス100本ノック（データ加工編）</li>
-                                        <div class="progress">
-                                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 39%;"
-                                                aria-valuenow="39" aria-valuemin="0" aria-valuemax="100">39%</div>
-                                        </div>
-                                        <li>Python実践データ分析100本ノック</li>
-                                        <div class="progress">
-                                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 64%;"
-                                                aria-valuenow="64" aria-valuemin="0" aria-valuemax="100">64%</div>
-                                        </div>
-                                        <li>自然言語処理100本ノック</li>
-                                        <div class="progress">
-                                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 59%;"
-                                                aria-valuenow="59" aria-valuemin="0" aria-valuemax="100">59%</div>
-                                        </div>
-                                        <li>『Kaggleで勝つデータ分析の技術』</li>
-                                        <div class="progress">
-                                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 85%;"
-                                                aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
-                                        </div>
-                                    </ul>
-                                </div>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card alert-warning">
-                        <div class="card-header" id="headingThree">
-                            <h1 class="mb-0">
-                                <button class="btn btn-link text-dark" type="button" data-toggle="collapse" data-target="#collapseThree"
-                                    aria-expanded="true" aria-controls="collapseThree">
-                                    その他触れたことのある技術・サービス等
-                                </button>
-                            </h1>
-                        </div>
-                        <div id="collapseThree" class="collapse show" aria-labelledby="headingThree" data-parent="#accordionExample">
-                            <div class="card-body">
-                                <p class="animation">
-                                <div class="show">
-                                    <ul>
-                                        <li>技術系</li>
-                                            <ul>
-                                                <li>R</li>
-                                                <li>Pug(Jade)</li>
-                                                <li>JQuery</li>
-                                                <li>Flask</li>
-                                                <li>Jinja</li>
-                                            </ul>
-                                        <li>サーバ系</li>
-                                            <ul>
-                                                <li>Heroku</li>
-                                                <li>Firebase</li>
-                                            </ul>
-                                        <li>サービス系</li>
-                                            <ul>
-                                                <li>AWS</li>
-                                                <li>Jupyter Notebook</li>
-                                                <li>Google Colaboratory</li>
-                                                <li>Google Drive</li>
-                                            </ul>
-                                        <li>データ系</li>
-                                            <ul>
-                                                <li>SQLite</li>
-                                                <li>PostgreSQL</li>
-                                            </ul>
-                                        <li>環境系</li>
-                                            <ul>
-                                                <li>AWS</li>
-                                                <li>Docker</li>
-                                                <li>Vagrant</li>
-                                                <li>VSCode</li>
-                                                <li>Eclipse</li>
-                                                <li>Windows 7, 10</li>
-                                                <li>macOS</li>
-                                                <li>Linux</li>
-                                                <li>Vi</li>
-                                            </ul>
-                                        <li>マネージメント系</li>
-                                            <ul>
-                                                <li>GitHub</li>
-                                                <li>GitLab</li>
-                                                <li>Git</li>
-                                                <li>Trello</li>
-                                                <li>Redmine</li>
-                                            </ul>
-                                </div>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="pageFoot">
-                        <footer>
-                            <h3 id="pageFootHeading"></h3>
-                            <p class="copyright"><small>&copy Copyright, 2020 All Rights Reserved</small></p>
-                        </footer>
-                    </div>
+            <div id="collapseOne" class="collapse show" aria-labelledby="my-top-one" data-parent="#accordionExample">
+              <div class="card-body">
+                <p class="animation">
+                <div class="show row">
+                  <div class='col-sm-4 col-md-4'>
+                    <h2 id="header" class="face">takeYY</h2>
+                    <script src="animation.js"></script>
+                    <img id="icon" src="images/RamielScrew480x480.jpg" width="180" alt="takeYYのアイコン">
+                  </div>
+                  <div class='col-sm-4 col-md-8 d-flex align-items-center'>
+                    <ul>
+                      <li>年齢：23</li>
+                      <li>職業：学生</li>
+                    </ul>
+                  </div>
                 </div>
+                </p>
+              </div>
             </div>
-    </article>
-    </div>
+          </div>
+          <div class="card alert-warning">
+            <div class="card-header" id="my-top-two">
+              <h1 class="mb-0">
+                <button class="btn btn-link collapsed text-dark" type="button" data-toggle="collapse"
+                  data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  技術
+                </button>
+              </h1>
+            </div>
+            <div id="collapseTwo" class="collapse show" aria-labelledby="my-top-two" data-parent="#accordionExample">
+              <div class="card-body">
+                <p class="animation">
+                <div class="show">
+                  開発経験
+                  <ul>
+                    <li>Python3</li>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                        style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                    </div>
+                    <ul>
+                      <li>Twitter Bot(@bot_about_movie)</li>
+                    </ul>
+                    <li>Java</li>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                        style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+                    </div>
+                    <ul>
+                      <li>YouTubeの動画推薦システム</li>
+                    </ul>
+                    <li>Blender</li>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                        style="width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">40%</div>
+                    </div>
+                    <ul>
+                      <li>5分のフルCG映像</li>
+                    </ul>
+                    <li>TypeScript</li>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                        style="width: 30%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">30%</div>
+                    </div>
+                    <ul>
+                      <li>THREE.jsでWebGL</li>
+                    </ul>
+                    <li>Raspberry Pi</li>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                        style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                    </div>
+                    <ul>
+                      <li>Twitter Botのサーバ</li>
+                      <li>電子ペーパの制御</li>
+                    </ul>
+                    <li>Node.js</li>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                        style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">65%</div>
+                    </div>
+                    <ul>
+                      <li>
+                        HubotでSlack Bot
+                        <ul>
+                          <li>ランダムおみくじ</li>
+                          <li>todoリスト</li>
+                        </ul>
+                      </li>
+                      <li>LINE bot about movie</li>
+                    </ul>
+                    </ur>
+                </div>
+                <div class="show">
+                  勉強中
+                  <ul>
+                    <li>Ruby (on Rails)</li>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                        style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+                    </div>
+                    <ul>
+                      <li>Slim</li>
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                          style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                      </div>
+                      <li>Model</li>
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                          style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+                      </div>
+                      <li>Controller</li>
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                          style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+                      </div>
+                      <li>View</li>
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                          style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                      </div>
+                      <li>Rspec</li>
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                          style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+                      </div>
+                    </ul>
+                    <li>React</li>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                        style="width: 10%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">10%</div>
+                    </div>
+                    <li>HTML</li>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                        style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                    </div>
+                    <li>CSS</li>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                        style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                    </div>
+                    <li>JavaScript</li>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                        style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                    </div>
+                    <li>Golang</li>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 5%;"
+                        aria-valuenow="5" aria-valuemin="0" aria-valuemax="100">5%</div>
+                    </div>
+                    <li>Machine Learning</li>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                        style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+                    </div>
+                    <li>Deep Learning</li>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                        style="width: 20%;" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">20%</div>
+                    </div>
+                    <li>数学</li>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                        style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+                    </div>
+                    <li>統計</li>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                        style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                    </div>
+                    <li>確率</li>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                        style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+                    </div>
+                    <li>Kaggle</li>
+                    <li>SIGNATE</li>
+                    <li>AtCoder</li>
+                    <li>データサイエンス100本ノック（データ加工編）</li>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                        style="width: 39%;" aria-valuenow="39" aria-valuemin="0" aria-valuemax="100">39%</div>
+                    </div>
+                    <li>Python実践データ分析100本ノック</li>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                        style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                    </div>
+                    <li>自然言語処理100本ノック</li>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                        style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                    </div>
+                  </ul>
+                </div>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card alert-warning">
+            <div class="card-header" id="my-top-three">
+              <h1 class="mb-0">
+                <button class="btn btn-link text-dark" type="button" data-toggle="collapse" data-target="#collapseThree"
+                  aria-expanded="true" aria-controls="collapseThree">
+                  その他触れたことのある技術・サービス等
+                </button>
+              </h1>
+            </div>
+            <div id="collapseThree" class="collapse show" aria-labelledby="my-top-three"
+              data-parent="#accordionExample">
+              <div class="card-body">
+                <p class="animation">
+                <div class="show">
+                  <ul>
+                    <li>Technology</li>
+                    <ul>
+                      <li>R</li>
+                      <li>Pug(Jade)</li>
+                      <li>JQuery</li>
+                      <li>Flask</li>
+                      <li>Jinja</li>
+                    </ul>
+                    <li>Server</li>
+                    <ul>
+                      <li>Heroku</li>
+                      <li>Firebase</li>
+                    </ul>
+                    <li>Service</li>
+                    <ul>
+                      <li>AWS</li>
+                      <li>Jupyter Notebook</li>
+                      <li>Google Colaboratory</li>
+                      <li>Google Drive</li>
+                    </ul>
+                    <li>Data</li>
+                    <ul>
+                      <li>SQLite</li>
+                      <li>PostgreSQL</li>
+                    </ul>
+                    <li>Environment</li>
+                    <ul>
+                      <li>AWS</li>
+                      <li>Docker</li>
+                      <li>Vagrant</li>
+                      <li>VSCode</li>
+                      <li>Eclipse</li>
+                      <li>Windows 7, 10</li>
+                      <li>macOS</li>
+                      <li>Linux</li>
+                      <li>Vi</li>
+                    </ul>
+                    <li>Management</li>
+                    <ul>
+                      <li>GitHub</li>
+                      <li>GitLab</li>
+                      <li>Git</li>
+                      <li>Trello</li>
+                      <li>Redmine</li>
+                    </ul>
+                </div>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id='my-hobby'>
+        <div class="rounded-pill border border-warning mt-5 mb-3">
+          <h1 class='d-flex align-items-center justify-content-center text-warning'>趣味</h1>
+        </div>
+        <div class="accordion" id="accordionExample">
+          <div class="card alert-warning">
+            <div class="card-header" id="my-hobby-one">
+              <h1 class="mb-0">
+                <button class="btn btn-link text-dark" type="button" data-toggle="collapse" data-target="#collapseOne"
+                  aria-expanded="true" aria-controls="collapseOne">
+                  映画鑑賞
+                </button>
+              </h1>
+            </div>
+            <div id="collapseOne" class="collapse show" aria-labelledby="my-hobby-one" data-parent="#accordionExample">
+              <div class="card-body">
+                <p class="animation">
+                <div class="show">
+                  <ul>
+                    <li>Amazon Prime</li>
+                    <ul>
+                      <li>マイ・インターン</li>
+                      <li>ショーシャンクの空に</li>
+                      <li>帝一の國</li>
+                      <li>鈴木先生</li>
+                      <li>ダンサー・イン・ザ・ダーク</li>
+                      <li>プレステージ</li>
+                    </ul>
+                    <li>Netflix</li>
+                    <ul>
+                      <li>レオン</li>
+                      <li>スタンド・バイ・ミー</li>
+                      <li>ハングオーバー</li>
+                    </ul>
+                    <li>Disney+</li>
+                    <ul>
+                      <li>インサイド・ヘッド</li>
+                      <li>ウォーリー</li>
+                      <li>トイ・ストーリー4</li>
+                      <li>ソウルフル・ワールド</li>
+                    </ul>
+                  </ul>
+                </div>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card alert-warning">
+            <div class="card-header" id="my-hobby-two">
+              <h1 class="mb-0">
+                <button class="btn btn-link collapsed text-dark" type="button" data-toggle="collapse"
+                  data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  音楽鑑賞
+                </button>
+              </h1>
+            </div>
+            <div id="collapseTwo" class="collapse show" aria-labelledby="my-hobby-two" data-parent="#accordionExample">
+              <div class="card-body">
+                <p class="animation">
+                <div class="show">
+                  <ul>
+                    <li>BUMP OF CHICKEN</li>
+                    <ul>
+                      <li>ギルド</li>
+                      <li>ゼロ</li>
+                      <li>Butterfly</li>
+                    </ul>
+                    <li>ONE OK ROCK</li>
+                    <ul>
+                      <li>Be the light</li>
+                      <li>Stand Out Fit In</li>
+                      <li>Borderline</li>
+                    </ul>
+                    <li>Judy And Mary</li>
+                    <ul>
+                      <li>ラッキープール</li>
+                      <li>散歩道</li>
+                      <li>BLUE TEARS</li>
+                      <li>DAYDREAM</li>
+                    </ul>
+                  </ul>
+                </div>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card alert-warning">
+            <div class="card-header" id="my-hobby-three">
+              <h1 class="mb-0">
+                <button class="btn btn-link collapsed text-dark" type="button" data-toggle="collapse"
+                  data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  PCゲーム
+                </button>
+              </h1>
+            </div>
+            <div id="collapseThree" class="collapse show" aria-labelledby="my-hobby-three"
+              data-parent="#accordionExample">
+              <div class="card-body">
+                <p class="animation">
+                <div class="show">
+                  <ul>
+                    <li>Apex Legends</li>
+                    <li>MONSTER HUNTER: WORLD</li>
+                    <li>Watch Dogs</li>
+                  </ul>
+                </div>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card alert-warning">
+            <div class="card-header" id="my-hobby-four">
+              <h1 class="mb-0">
+                <button class="btn btn-link collapsed text-dark" type="button" data-toggle="collapse"
+                  data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  漫画
+                </button>
+              </h1>
+            </div>
+            <div id="collapseFour" class="collapse show" aria-labelledby="my-hobby-four" data-parent="#accordionExample">
+              <div class="card-body">
+                <p class="animation">
+                <div class="show">
+                  <ul>
+                    <li>宇宙兄弟</li>
+                    <li>3月のライオン</li>
+                    <li>NARUTO</li>
+                    <li>アルキメデスの大戦</li>
+                    <li>BLUE GIANT</li>
+                    <li>逃げるは恥だが役に立つ</li>
+                    <li>ランウェイで笑って</li>
+                  </ul>
+                </div>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card alert-warning">
+            <div class="card-header" id="my-hobby-five">
+              <h1 class="mb-0">
+                <button class="btn btn-link collapsed text-dark" type="button" data-toggle="collapse" data-target="#hobby-collapse-five"
+                  aria-expanded="false" aria-controls="hobby-collapse-five">
+                  書籍
+                </button>
+              </h1>
+            </div>
+            <div id="hobby-collapse-five" class="collapse show" aria-labelledby="my-hobby-five" data-parent="#accordionExample">
+              <div class="card-body">
+                <p class="animation">
+                <div class="show">
+                  <ul>
+                    <li>『Kaggleで勝つデータ分析の技術』</li>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 85%;"
+                        aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+                    </div>
+                    <li>『FACTFULNESS（ファクトフルネス）10の思い込みを乗り越え、データを基に世界を正しく見る習慣』</li>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 65%;"
+                        aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">65%</div>
+                    </div>
+                  </ul>
+                </div>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id='my-product'>
+        <div class="rounded-pill border border-info mt-5 mb-3">
+          <h1 class='d-flex align-items-center justify-content-center text-info'>プロダクト</h1>
+        </div>
+        <div class="accordion" id="accordionExample">
+          <div class="card alert-warning">
+            <div class="card-header alert-dark" id="my-product-one">
+              <h1 class="d-flex align-items-center justify-content-center">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                  aria-expanded="false" aria-controls="collapseOne">
+                  <div class="bg-dark text-white">映画情報自動ツイートbot</div>
+                  <img class="img-thumbnail" src="images/bot_about_movie.png" alt="映画情報自動ツイートの画面" width="400">
+                </button>
+              </h1>
+            </div>
+            <div id="collapseOne" class="collapse show" aria-labelledby="my-product-one" data-parent="#accordionExample">
+              <div class="card-body">
+                <p class="animation">
+                <div class="show">
+                  <h3 class="card-title"><a href="https://twitter.com/bot_about_movie">映画ランキングbot</a></h3>
+                  <p>
+                    人気映画ランキング１位から21位までを１週間かけて自動でツイートするbot.<br>
+                    ツイートしてくれる情報は以下の通り.
+                  <ul>
+                    <li>ランキング</li>
+                    <li>映画タイトル</li>
+                    <li>人気度</li>
+                    <li>平均評価 (x/100)</li>
+                    <li>評価信頼性</li>
+                    <li>映画ポスター</li>
+                  </ul>
+                  </p>
+                  <p>
+                    <a href="https://developers.themoviedb.org/3/getting-started/introduction">TMDb API</a>のGet
+                    Trendingメソッドと, Twitter REST APIを利用している.
+                  </p>
+                  <p>
+                    サーバにRaspberry Piを使用し, Cronを用いてPythonプログラムを自動で実行している.
+                    日本時間の12時/15時/18時のランダムな分でツイート.
+                  </p>
+                  <p>
+                    評価信頼性は収集した全評価数の4分位を計算している.<br>
+                    第一四分位数までなら「極低」, 中央値までなら「低」,<br>
+                    第三四分位数までなら「高」, それ以上なら「極高」としている.
+                  </p>
+                </div>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card alert-warning">
+            <div class="card-header alert-dark" id="heading2">
+              <h1 class="d-flex align-items-center justify-content-center">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse2"
+                  aria-expanded="false" aria-controls="collapse2">
+                  <div class="bg-dark text-white">周辺の映画館やおすすめ映画を教えてくれるLINE bot</div>
+                  <img class="img-thumbnail" src="images/LINEbot_about_movie.jpg" alt="LINE bot about movieの動作画像"
+                    width="250">
+                  <img class="img-thumbnail" src="images/LINEbot_QRcode.png" alt="LINE botのQRコード" width="200">
+                </button>
+              </h1>
+            </div>
+            <div id="collapse2" class="collapse show" aria-labelledby="heading2" data-parent="#accordionExample">
+              <div class="card-body">
+                <p class="animation">
+                <div class="show">
+                  <h3 class="card-title">LINE bot about movie</h3>
+                  <p>
+                    LINEの位置情報を送信することによって,
+                    指定した範囲, または, 周辺3km以内にある映画館を表示してくれるbot.<br>
+                    LINEのMessaging APIとYahoo!のローカルサーチAPIを利用している.
+                  </p>
+                  <p>
+                    【初めての方へ】<br>
+                    初めて利用される場合は, 認証が必要です.<br>
+                    1. 「トークへのメッセージ送信」が許可されていることを確認してください.<br>
+                    2. 注意事項をよく読み, 画面下の「許可する」ボタンをタップしてください.
+                  </p>
+                  <p>
+                    【使い方】<br>
+                    詳細な使い方は<a href='https://line-bot-about-movie.herokuapp.com/' target='_blank'>こちら</a>を見てください！<br>
+                    「映画」もしくは「#movie」を送信すると, 検索条件を聞かれるため,
+                    「詳しく指定」もしくは「おすすめを検索」のどちらかを選択してください.
+                    条件に合った映画をランダムで3作品表示します.
+                  </p>
+                  <p>
+                    その他機能に関しては, 「ヘルプ」を送信して確認してください.
+                  </p>
+                  <p>
+                    現在は, 位置情報からのリクエストとおすすめの映画紹介にしか対応できていないが,
+                    将来的には最近の映画や感情の入力によって合いそうな映画を紹介するといった機能を実現することを考えている.
+                  </p>
+                  <p>（以下の動画は旧バージョンです）</p>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/_B5pohJC1dE" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card alert-warning">
+            <div class="card-header alert-dark" id="heading3">
+              <h1 class="d-flex align-items-center justify-content-center">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse3"
+                  aria-expanded="false" aria-controls="collapse3">
+                  <div class="bg-dark text-white">タイタニックの生存予測を行うWebアプリケーション</div>
+                </button>
+              </h1>
+            </div>
+            <div id="collapse3" class="collapse show" aria-labelledby="heading3" data-parent="#accordionExample">
+              <div class="card-body">
+                <p class="animation">
+                <div class="show">
+                  <h3 class="card-title">タイタニック生存チャレンジ</h3>
+                  <p>
+                    あなたが何も知らずにタイタニック号に乗っていたら, 助かったかを予測するWebアプリケーションです.<br>
+                    FlaskとJinjaを利用して, 入力データから機械学習を用いて予測します.
+                  </p>
+                  <p>
+                    ※公開はしていません.ローカル環境です.<br>
+                    ※予測精度はあくまで目安であり, 正確ではありません.
+                  </p>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/xkIWJcdZEws" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card alert-warning">
+            <div class="card-header alert-dark" id="heading4">
+              <h1 class="d-flex align-items-center justify-content-center">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse4"
+                  aria-expanded="false" aria-controls="collapse4">
+                  <div class="bg-dark text-white">三角形の五心(重心・内心・外心・垂心・傍心)の可視化</div>
+                </button>
+              </h1>
+            </div>
+            <div id="collapse4" class="collapse show" aria-labelledby="heading4" data-parent="#accordionExample">
+              <div class="card-body">
+                <p class="animation">
+                <div class="show">
+                  <h3 class="card-title">Five Centroids of Triangle Visualization</h3>
+                  <p>
+                    【制作時期】<br>
+                    2019/01
+                  </p>
+                  <p>
+                    三角形の頂点をマウスのドラッグで動かすことができる.<br>
+                    三角形の五心（重心・外心・内心・垂心・傍心）は一直線になると言う数学の先生から吹き込まれた嘘を確かめるために制作しました。
+                    Processingを利用することで, プログラミングに馴染みのない人でも簡単に実行でき, 簡単なキーボード操作で五心の中で表示したい情報を選ぶことができます.
+                  </p>
+                  <p>
+                    【プロジェクト】<br>
+                    <a href="https://github.com/takeYY/fiveCentroids">GitHubのプロジェクトURL</a>
+                  </p>
+                  <p>
+                    【環境】<br>
+                    Processing 3.01
+                  </p>
+                  <p>
+                    【使い方】<br>
+                    Processingをインストールして, 実行ボタンを押下.
+                    三角形の頂点（A,B,C）はマウスのドラッグで移動可能.
+                    「J」キーで重心, 「G」キーで外心, 「N」キーで内心, 「S」キーで垂心, 「B」キーで傍心の特徴を表す線がそれぞれ描画される.
+                  </p>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/Q1QQiOt-vxU" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card alert-warning">
+            <div class="card-header alert-dark" id="headingEtc">
+              <h1 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseEtc"
+                  aria-expanded="false" aria-controls="collapseEtc">
+                  <div class="bg-dark text-white">その他</div>
+                  <img class="img-thumbnail" src="images/earth.png" alt="開発中の画像">
+                </button>
+              </h1>
+            </div>
+            <div id="collapseEtc" class="collapse show" aria-labelledby="headingEtc" data-parent="#accordionExample">
+              <div class="card-body">
+                <p class="animation">
+                <div class="show">
+                  <h3 class="card-title">開発中</h3>
+                  <p>
+                    お楽しみに！
+                  </p>
+                </div>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id='my-link'>
+        <div class="rounded-pill border border-primary mt-5 mb-3">
+          <h1 class='d-flex align-items-center justify-content-center text-primary'>関連リンク</h1>
+        </div>
+        <a href="https://github.com/takeyy" target="_blank">
+          <img class="social-icon" src="logo/GitHub_ic.png" alt="GitHub">
+        </a>
+        <a href="https://www.youtube.com/channel/UCJ8WyMiscr7kG1L2oNwOnfA" target="_blank">
+          <img class="social-icon" src="logo/YouTube_ic.png" alt="YouTube">
+        </a>
+        <a href="https://www.kaggle.com/takeyy" target="_blank">
+          <img class='social-icon' src='logo/Kaggle_ic.png' alt='Kaggle'>
+        </a>
+        <a href='https://signate.jp/users/47946' target='_blank'>SIGNATE</a>
+
+        <div id="pageFoot">
+          <footer>
+            <h3 id="pageFootHeading"></h3>
+            <p class="copyright"><small>&copy Copyright, 2021 All Rights Reserved</small></p>
+          </footer>
+        </div>
+      </div>
+  </article>
+  </div>
 </body>
 
 </html>
