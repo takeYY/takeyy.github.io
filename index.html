@@ -1,73 +1,79 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang='ja'>
 
 <head>
-  <meta charset="utf-8">
+  <meta charset='utf-8'>
   <title>takeYYのHP</title>
-  <link rel="stylesheet" , href="css/style.css">
-  <link rel="stylesheet" href="css/self-introduction.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-    crossorigin="anonymous"></script>
+  <link rel='stylesheet' , href='css/style.css'>
+  <link rel='stylesheet' href='css/self-introduction.css'>
+  <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css'
+    integrity='sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk' crossorigin='anonymous'>
+  <script src='https://code.jquery.com/jquery-3.5.1.slim.min.js'
+    integrity='sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj'
+    crossorigin='anonymous'></script>
+  <script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'
+    integrity='sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo'
+    crossorigin='anonymous'></script>
+  <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js'
+    integrity='sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI'
+    crossorigin='anonymous'></script>
 </head>
 
-<body data-spy="scroll" data-target="#my-navbar" data-offset="100" class="gradient" oncontextmenu="return false;">
+<body data-spy='scroll' data-target='#my-navbar' data-offset='100' class='gradient' oncontextmenu='return false;'>
   <div class='shutter'></div>
   <article>
-    <div id="page">
+    <div id='page'>
       <header>
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" id='my-navbar'>
-          <a class="navbar-brand" href="index.html">
-            <img src="./images/RamielScrew480x480.jpg" alt="takeYYのアイコン" width="30">
+        <nav class='navbar navbar-expand-md navbar-dark fixed-top bg-dark' id='my-navbar'>
+          <a class='navbar-brand' href='index.html'>
+            <img src='./images/RamielScrew480x480.jpg' alt='takeYYのアイコン' width='30'>
             takeYY
           </a>
-          <ul class="nav nav-pills">
-            <li class="nav-item">
-              <a class="nav-link active" href="#my-top">トップ</a>
+          <ul class='nav nav-pills'>
+            <li class='nav-item'>
+              <a class='nav-link active' href='#my-top'>トップ</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#my-hobby">趣味</a>
+            <li class='nav-item'>
+              <a class='nav-link' href='#my-hobby'>趣味</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#my-product">プロダクト</a>
+            <li class='nav-item'>
+              <a class='nav-link' href='#my-product'>プロダクト</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#my-link">関連リンク</a>
+            <li class='nav-item'>
+              <a class='nav-link' href='#my-link'>関連リンク</a>
             </li>
           </ul>
         </nav>
       </header>
 
+      <!--
+        # トップ
+      -->
       <div id='my-top'>
-        <div class="rounded-pill border border-danger mt-5 mb-3">
+        <div class='rounded-pill border border-danger mt-5 mb-3'>
           <h1 class='d-flex align-items-center justify-content-center text-danger'>トップ</h1>
         </div>
-        <div class="accordion" id="accordionExample">
-          <div class="card alert-warning">
-            <div class="card-header" id="my-top-one">
-              <h1 class="mb-0">
-                <button class="btn btn-link text-dark" type="button" data-toggle="collapse" data-target="#collapseOne"
-                  aria-expanded="true" aria-controls="collapseOne">
+        <div class='accordion' id='accordion-top'>
+          <!--
+            ## 私の情報
+          -->
+          <div class='card alert-warning'>
+            <div class='card-header' id='my-top-one'>
+              <h1 class='mb-0'>
+                <button class='btn btn-link text-dark' type='button' data-toggle='collapse' data-target='#top-collapse-one'
+                  aria-expanded='true' aria-controls='top-collapse-one'>
                   私の情報
                 </button>
               </h1>
             </div>
-            <div id="collapseOne" class="collapse show" aria-labelledby="my-top-one" data-parent="#accordionExample">
-              <div class="card-body">
-                <p class="animation">
-                <div class="show row">
+            <div id='top-collapse-one' class='collapse show' aria-labelledby='my-top-one' data-parent='#accordion-top'>
+              <div class='card-body'>
+                <p class='animation'>
+                <div class='show row'>
                   <div class='col-sm-4 col-md-4'>
-                    <h2 id="header" class="face">takeYY</h2>
-                    <script src="animation.js"></script>
-                    <img id="icon" src="images/RamielScrew480x480.jpg" width="180" alt="takeYYのアイコン">
+                    <h2 id='header' class='face'>takeYY</h2>
+                    <script src='animation.js'></script>
+                    <img id='icon' src='images/RamielScrew480x480.jpg' width='180' alt='takeYYのアイコン'>
                   </div>
                   <div class='col-sm-4 col-md-8 d-flex align-items-center'>
                     <ul>
@@ -80,66 +86,72 @@
               </div>
             </div>
           </div>
-          <div class="card alert-warning">
-            <div class="card-header" id="my-top-two">
-              <h1 class="mb-0">
-                <button class="btn btn-link collapsed text-dark" type="button" data-toggle="collapse"
-                  data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          <!--
+            ## 技術
+          -->
+          <div class='card alert-warning'>
+            <div class='card-header' id='my-top-two'>
+              <h1 class='mb-0'>
+                <button class='btn btn-link collapsed text-dark' type='button' data-toggle='collapse'
+                  data-target='#top-collapse-two' aria-expanded='false' aria-controls='top-collapse-two'>
                   技術
                 </button>
               </h1>
             </div>
-            <div id="collapseTwo" class="collapse show" aria-labelledby="my-top-two" data-parent="#accordionExample">
-              <div class="card-body">
-                <p class="animation">
-                <div class="show">
+            <div id='top-collapse-two' class='collapse show' aria-labelledby='my-top-two' data-parent='#accordion-top'>
+              <div class='card-body'>
+                <p class='animation'>
+                <!--
+                  ### 開発経験
+                -->
+                <div class='show'>
                   開発経験
                   <ul>
                     <li>Python3</li>
-                    <div class="progress">
-                      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-                        style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                    <div class='progress'>
+                      <div class='progress-bar progress-bar-striped progress-bar-animated' role='progressbar'
+                        style='width: 80%;' aria-valuenow='80' aria-valuemin='0' aria-valuemax='100'>80%</div>
                     </div>
                     <ul>
                       <li>Twitter Bot(@bot_about_movie)</li>
                     </ul>
                     <li>Java</li>
-                    <div class="progress">
-                      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-                        style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+                    <div class='progress'>
+                      <div class='progress-bar progress-bar-striped progress-bar-animated' role='progressbar'
+                        style='width: 60%;' aria-valuenow='60' aria-valuemin='0' aria-valuemax='100'>60%</div>
                     </div>
                     <ul>
                       <li>YouTubeの動画推薦システム</li>
                     </ul>
                     <li>Blender</li>
-                    <div class="progress">
-                      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-                        style="width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">40%</div>
+                    <div class='progress'>
+                      <div class='progress-bar progress-bar-striped progress-bar-animated' role='progressbar'
+                        style='width: 40%;' aria-valuenow='40' aria-valuemin='0' aria-valuemax='100'>40%</div>
                     </div>
                     <ul>
                       <li>5分のフルCG映像</li>
                     </ul>
                     <li>TypeScript</li>
-                    <div class="progress">
-                      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-                        style="width: 30%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">30%</div>
+                    <div class='progress'>
+                      <div class='progress-bar progress-bar-striped progress-bar-animated' role='progressbar'
+                        style='width: 30%;' aria-valuenow='30' aria-valuemin='0' aria-valuemax='100'>30%</div>
                     </div>
                     <ul>
                       <li>THREE.jsでWebGL</li>
                     </ul>
                     <li>Raspberry Pi</li>
-                    <div class="progress">
-                      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-                        style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                    <div class='progress'>
+                      <div class='progress-bar progress-bar-striped progress-bar-animated' role='progressbar'
+                        style='width: 50%;' aria-valuenow='50' aria-valuemin='0' aria-valuemax='100'>50%</div>
                     </div>
                     <ul>
                       <li>Twitter Botのサーバ</li>
                       <li>電子ペーパの制御</li>
                     </ul>
                     <li>Node.js</li>
-                    <div class="progress">
-                      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-                        style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">65%</div>
+                    <div class='progress'>
+                      <div class='progress-bar progress-bar-striped progress-bar-animated' role='progressbar'
+                        style='width: 65%;' aria-valuenow='65' aria-valuemin='0' aria-valuemax='100'>65%</div>
                     </div>
                     <ul>
                       <li>
@@ -153,108 +165,111 @@
                     </ul>
                     </ur>
                 </div>
-                <div class="show">
+                <!--
+                  ### 勉強中
+                -->
+                <div class='show'>
                   勉強中
                   <ul>
                     <li>Ruby (on Rails)</li>
-                    <div class="progress">
-                      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-                        style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+                    <div class='progress'>
+                      <div class='progress-bar progress-bar-striped progress-bar-animated' role='progressbar'
+                        style='width: 70%;' aria-valuenow='70' aria-valuemin='0' aria-valuemax='100'>70%</div>
                     </div>
                     <ul>
                       <li>Slim</li>
-                      <div class="progress">
-                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-                          style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                      <div class='progress'>
+                        <div class='progress-bar progress-bar-striped progress-bar-animated' role='progressbar'
+                          style='width: 80%;' aria-valuenow='80' aria-valuemin='0' aria-valuemax='100'>80%</div>
                       </div>
                       <li>Model</li>
-                      <div class="progress">
-                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-                          style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+                      <div class='progress'>
+                        <div class='progress-bar progress-bar-striped progress-bar-animated' role='progressbar'
+                          style='width: 60%;' aria-valuenow='60' aria-valuemin='0' aria-valuemax='100'>60%</div>
                       </div>
                       <li>Controller</li>
-                      <div class="progress">
-                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-                          style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+                      <div class='progress'>
+                        <div class='progress-bar progress-bar-striped progress-bar-animated' role='progressbar'
+                          style='width: 60%;' aria-valuenow='60' aria-valuemin='0' aria-valuemax='100'>60%</div>
                       </div>
                       <li>View</li>
-                      <div class="progress">
-                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-                          style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                      <div class='progress'>
+                        <div class='progress-bar progress-bar-striped progress-bar-animated' role='progressbar'
+                          style='width: 80%;' aria-valuenow='80' aria-valuemin='0' aria-valuemax='100'>80%</div>
                       </div>
                       <li>Rspec</li>
-                      <div class="progress">
-                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-                          style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+                      <div class='progress'>
+                        <div class='progress-bar progress-bar-striped progress-bar-animated' role='progressbar'
+                          style='width: 70%;' aria-valuenow='70' aria-valuemin='0' aria-valuemax='100'>70%</div>
                       </div>
                     </ul>
                     <li>React</li>
-                    <div class="progress">
-                      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-                        style="width: 10%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">10%</div>
+                    <div class='progress'>
+                      <div class='progress-bar progress-bar-striped progress-bar-animated' role='progressbar'
+                        style='width: 10%;' aria-valuenow='10' aria-valuemin='0' aria-valuemax='100'>10%</div>
                     </div>
                     <li>HTML</li>
-                    <div class="progress">
-                      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-                        style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                    <div class='progress'>
+                      <div class='progress-bar progress-bar-striped progress-bar-animated' role='progressbar'
+                        style='width: 90%;' aria-valuenow='90' aria-valuemin='0' aria-valuemax='100'>90%</div>
                     </div>
                     <li>CSS</li>
-                    <div class="progress">
-                      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-                        style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                    <div class='progress'>
+                      <div class='progress-bar progress-bar-striped progress-bar-animated' role='progressbar'
+                        style='width: 80%;' aria-valuenow='80' aria-valuemin='0' aria-valuemax='100'>80%</div>
                     </div>
                     <li>JavaScript</li>
-                    <div class="progress">
-                      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-                        style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                    <div class='progress'>
+                      <div class='progress-bar progress-bar-striped progress-bar-animated' role='progressbar'
+                        style='width: 50%;' aria-valuenow='50' aria-valuemin='0' aria-valuemax='100'>50%</div>
                     </div>
                     <li>Golang</li>
-                    <div class="progress">
-                      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 5%;"
-                        aria-valuenow="5" aria-valuemin="0" aria-valuemax="100">5%</div>
+                    <div class='progress'>
+                      <div class='progress-bar progress-bar-striped progress-bar-animated' role='progressbar' style='width: 5%;'
+                        aria-valuenow='5' aria-valuemin='0' aria-valuemax='100'>5%</div>
                     </div>
                     <li>Machine Learning</li>
-                    <div class="progress">
-                      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-                        style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+                    <div class='progress'>
+                      <div class='progress-bar progress-bar-striped progress-bar-animated' role='progressbar'
+                        style='width: 70%;' aria-valuenow='70' aria-valuemin='0' aria-valuemax='100'>70%</div>
                     </div>
                     <li>Deep Learning</li>
-                    <div class="progress">
-                      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-                        style="width: 20%;" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">20%</div>
+                    <div class='progress'>
+                      <div class='progress-bar progress-bar-striped progress-bar-animated' role='progressbar'
+                        style='width: 20%;' aria-valuenow='20' aria-valuemin='0' aria-valuemax='100'>20%</div>
                     </div>
                     <li>数学</li>
-                    <div class="progress">
-                      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-                        style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+                    <div class='progress'>
+                      <div class='progress-bar progress-bar-striped progress-bar-animated' role='progressbar'
+                        style='width: 60%;' aria-valuenow='60' aria-valuemin='0' aria-valuemax='100'>60%</div>
                     </div>
                     <li>統計</li>
-                    <div class="progress">
-                      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-                        style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                    <div class='progress'>
+                      <div class='progress-bar progress-bar-striped progress-bar-animated' role='progressbar'
+                        style='width: 50%;' aria-valuenow='50' aria-valuemin='0' aria-valuemax='100'>50%</div>
                     </div>
                     <li>確率</li>
-                    <div class="progress">
-                      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-                        style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+                    <div class='progress'>
+                      <div class='progress-bar progress-bar-striped progress-bar-animated' role='progressbar'
+                        style='width: 60%;' aria-valuenow='60' aria-valuemin='0' aria-valuemax='100'>60%</div>
                     </div>
                     <li>Kaggle</li>
                     <li>SIGNATE</li>
                     <li>AtCoder</li>
                     <li>データサイエンス100本ノック（データ加工編）</li>
-                    <div class="progress">
-                      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-                        style="width: 39%;" aria-valuenow="39" aria-valuemin="0" aria-valuemax="100">39%</div>
+                    <div class='progress'>
+                      <div class='progress-bar progress-bar-striped progress-bar-animated' role='progressbar'
+                        style='width: 39%;' aria-valuenow='39' aria-valuemin='0' aria-valuemax='100'>39%</div>
                     </div>
                     <li>Python実践データ分析100本ノック</li>
-                    <div class="progress">
-                      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-                        style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                    <div class='progress'>
+                      <div class='progress-bar progress-bar-striped progress-bar-animated' role='progressbar'
+                        style='width: 90%;' aria-valuenow='90' aria-valuemin='0' aria-valuemax='100'>90%</div>
                     </div>
                     <li>自然言語処理100本ノック</li>
-                    <div class="progress">
-                      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-                        style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                    <div class='progress'>
+                      <div class='progress-bar progress-bar-striped progress-bar-animated' role='progressbar'
+                        style='width: 90%;' aria-valuenow='90' aria-valuemin='0' aria-valuemax='100'>90%</div>
                     </div>
                   </ul>
                 </div>
@@ -262,21 +277,27 @@
               </div>
             </div>
           </div>
-          <div class="card alert-warning">
-            <div class="card-header" id="my-top-three">
-              <h1 class="mb-0">
-                <button class="btn btn-link text-dark" type="button" data-toggle="collapse" data-target="#collapseThree"
-                  aria-expanded="true" aria-controls="collapseThree">
+          <!--
+            ## その他触れたことのある技術・サービス等
+          -->
+          <div class='card alert-warning'>
+            <div class='card-header' id='my-top-three'>
+              <h1 class='mb-0'>
+                <button class='btn btn-link text-dark' type='button' data-toggle='collapse' data-target='#top-collapse-three'
+                  aria-expanded='true' aria-controls='top-collapse-three'>
                   その他触れたことのある技術・サービス等
                 </button>
               </h1>
             </div>
-            <div id="collapseThree" class="collapse show" aria-labelledby="my-top-three"
-              data-parent="#accordionExample">
-              <div class="card-body">
-                <p class="animation">
-                <div class="show">
+            <div id='top-collapse-three' class='collapse show' aria-labelledby='my-top-three'
+              data-parent='#accordion-top'>
+              <div class='card-body'>
+                <p class='animation'>
+                <div class='show'>
                   <ul>
+                    <!--
+                      ### 技術系
+                    -->
                     <li>Technology</li>
                     <ul>
                       <li>R</li>
@@ -285,11 +306,17 @@
                       <li>Flask</li>
                       <li>Jinja</li>
                     </ul>
+                    <!--
+                      ### サーバー系
+                    -->
                     <li>Server</li>
                     <ul>
                       <li>Heroku</li>
                       <li>Firebase</li>
                     </ul>
+                    <!--
+                      ### サービス系
+                    -->
                     <li>Service</li>
                     <ul>
                       <li>AWS</li>
@@ -297,11 +324,17 @@
                       <li>Google Colaboratory</li>
                       <li>Google Drive</li>
                     </ul>
+                    <!--
+                      ### データ系
+                    -->
                     <li>Data</li>
                     <ul>
                       <li>SQLite</li>
                       <li>PostgreSQL</li>
                     </ul>
+                    <!--
+                      ### 環境系
+                    -->
                     <li>Environment</li>
                     <ul>
                       <li>AWS</li>
@@ -314,6 +347,9 @@
                       <li>Linux</li>
                       <li>Vi</li>
                     </ul>
+                    <!--
+                      ### マネージメント系
+                    -->
                     <li>Management</li>
                     <ul>
                       <li>GitHub</li>
@@ -330,25 +366,34 @@
         </div>
       </div>
 
+      <!--
+        # 趣味
+      -->
       <div id='my-hobby'>
-        <div class="rounded-pill border border-warning mt-5 mb-3">
+        <div class='rounded-pill border border-warning mt-5 mb-3'>
           <h1 class='d-flex align-items-center justify-content-center text-warning'>趣味</h1>
         </div>
-        <div class="accordion" id="accordionExample">
-          <div class="card alert-warning">
-            <div class="card-header" id="my-hobby-one">
-              <h1 class="mb-0">
-                <button class="btn btn-link text-dark" type="button" data-toggle="collapse" data-target="#collapseOne"
-                  aria-expanded="true" aria-controls="collapseOne">
+        <div class='accordion' id='accordion-hobby'>
+          <!--
+            ## 映画鑑賞
+          -->
+          <div class='card alert-warning'>
+            <div class='card-header' id='my-hobby-one'>
+              <h1 class='mb-0'>
+                <button class='btn btn-link text-dark' type='button' data-toggle='collapse' data-target='#hobby-collapse-one'
+                  aria-expanded='true' aria-controls='hobby-collapse-one'>
                   映画鑑賞
                 </button>
               </h1>
             </div>
-            <div id="collapseOne" class="collapse show" aria-labelledby="my-hobby-one" data-parent="#accordionExample">
-              <div class="card-body">
-                <p class="animation">
-                <div class="show">
+            <div id='hobby-collapse-one' class='collapse show' aria-labelledby='my-hobby-one' data-parent='#accordion-hobby'>
+              <div class='card-body'>
+                <p class='animation'>
+                <div class='show'>
                   <ul>
+                    <!--
+                      ### Amazon Prime
+                    -->
                     <li>Amazon Prime</li>
                     <ul>
                       <li>マイ・インターン</li>
@@ -358,12 +403,18 @@
                       <li>ダンサー・イン・ザ・ダーク</li>
                       <li>プレステージ</li>
                     </ul>
+                    <!--
+                      ### Netflix
+                    -->
                     <li>Netflix</li>
                     <ul>
                       <li>レオン</li>
                       <li>スタンド・バイ・ミー</li>
                       <li>ハングオーバー</li>
                     </ul>
+                    <!--
+                      ### Disney+
+                    -->
                     <li>Disney+</li>
                     <ul>
                       <li>インサイド・ヘッド</li>
@@ -377,19 +428,22 @@
               </div>
             </div>
           </div>
-          <div class="card alert-warning">
-            <div class="card-header" id="my-hobby-two">
-              <h1 class="mb-0">
-                <button class="btn btn-link collapsed text-dark" type="button" data-toggle="collapse"
-                  data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          <!--
+            ## 音楽鑑賞
+          -->
+          <div class='card alert-warning'>
+            <div class='card-header' id='my-hobby-two'>
+              <h1 class='mb-0'>
+                <button class='btn btn-link collapsed text-dark' type='button' data-toggle='collapse'
+                  data-target='#hobby-collapse-two' aria-expanded='false' aria-controls='hobby-collapse-two'>
                   音楽鑑賞
                 </button>
               </h1>
             </div>
-            <div id="collapseTwo" class="collapse show" aria-labelledby="my-hobby-two" data-parent="#accordionExample">
-              <div class="card-body">
-                <p class="animation">
-                <div class="show">
+            <div id='hobby-collapse-two' class='collapse show' aria-labelledby='my-hobby-two' data-parent='#accordion-hobby'>
+              <div class='card-body'>
+                <p class='animation'>
+                <div class='show'>
                   <ul>
                     <li>BUMP OF CHICKEN</li>
                     <ul>
@@ -416,20 +470,23 @@
               </div>
             </div>
           </div>
-          <div class="card alert-warning">
-            <div class="card-header" id="my-hobby-three">
-              <h1 class="mb-0">
-                <button class="btn btn-link collapsed text-dark" type="button" data-toggle="collapse"
-                  data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          <!--
+            ## PCゲーム
+          -->
+          <div class='card alert-warning'>
+            <div class='card-header' id='my-hobby-three'>
+              <h1 class='mb-0'>
+                <button class='btn btn-link collapsed text-dark' type='button' data-toggle='collapse'
+                  data-target='#hobby-collapse-three' aria-expanded='false' aria-controls='hobby-collapse-three'>
                   PCゲーム
                 </button>
               </h1>
             </div>
-            <div id="collapseThree" class="collapse show" aria-labelledby="my-hobby-three"
-              data-parent="#accordionExample">
-              <div class="card-body">
-                <p class="animation">
-                <div class="show">
+            <div id='hobby-collapse-three' class='collapse show' aria-labelledby='my-hobby-three'
+              data-parent='#accordion-hobby'>
+              <div class='card-body'>
+                <p class='animation'>
+                <div class='show'>
                   <ul>
                     <li>Apex Legends</li>
                     <li>MONSTER HUNTER: WORLD</li>
@@ -440,19 +497,22 @@
               </div>
             </div>
           </div>
-          <div class="card alert-warning">
-            <div class="card-header" id="my-hobby-four">
-              <h1 class="mb-0">
-                <button class="btn btn-link collapsed text-dark" type="button" data-toggle="collapse"
-                  data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          <!--
+            ## 漫画
+          -->
+          <div class='card alert-warning'>
+            <div class='card-header' id='my-hobby-four'>
+              <h1 class='mb-0'>
+                <button class='btn btn-link collapsed text-dark' type='button' data-toggle='collapse'
+                  data-target='#hobby-collapse-four' aria-expanded='false' aria-controls='hobby-collapse-four'>
                   漫画
                 </button>
               </h1>
             </div>
-            <div id="collapseFour" class="collapse show" aria-labelledby="my-hobby-four" data-parent="#accordionExample">
-              <div class="card-body">
-                <p class="animation">
-                <div class="show">
+            <div id='hobby-collapse-four' class='collapse show' aria-labelledby='my-hobby-four' data-parent='#accordion-hobby'>
+              <div class='card-body'>
+                <p class='animation'>
+                <div class='show'>
                   <ul>
                     <li>宇宙兄弟</li>
                     <li>3月のライオン</li>
@@ -467,29 +527,32 @@
               </div>
             </div>
           </div>
-          <div class="card alert-warning">
-            <div class="card-header" id="my-hobby-five">
-              <h1 class="mb-0">
-                <button class="btn btn-link collapsed text-dark" type="button" data-toggle="collapse" data-target="#hobby-collapse-five"
-                  aria-expanded="false" aria-controls="hobby-collapse-five">
+          <!--
+            ## 書籍
+          -->
+          <div class='card alert-warning'>
+            <div class='card-header' id='my-hobby-five'>
+              <h1 class='mb-0'>
+                <button class='btn btn-link collapsed text-dark' type='button' data-toggle='collapse' data-target='#hobby-collapse-five'
+                  aria-expanded='false' aria-controls='hobby-collapse-five'>
                   書籍
                 </button>
               </h1>
             </div>
-            <div id="hobby-collapse-five" class="collapse show" aria-labelledby="my-hobby-five" data-parent="#accordionExample">
-              <div class="card-body">
-                <p class="animation">
-                <div class="show">
+            <div id='hobby-collapse-five' class='collapse show' aria-labelledby='my-hobby-five' data-parent='#accordion-hobby'>
+              <div class='card-body'>
+                <p class='animation'>
+                <div class='show'>
                   <ul>
                     <li>『Kaggleで勝つデータ分析の技術』</li>
-                    <div class="progress">
-                      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 85%;"
-                        aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+                    <div class='progress'>
+                      <div class='progress-bar progress-bar-striped progress-bar-animated' role='progressbar' style='width: 85%;'
+                        aria-valuenow='85' aria-valuemin='0' aria-valuemax='100'>85%</div>
                     </div>
                     <li>『FACTFULNESS（ファクトフルネス）10の思い込みを乗り越え、データを基に世界を正しく見る習慣』</li>
-                    <div class="progress">
-                      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 65%;"
-                        aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">65%</div>
+                    <div class='progress'>
+                      <div class='progress-bar progress-bar-striped progress-bar-animated' role='progressbar' style='width: 65%;'
+                        aria-valuenow='65' aria-valuemin='0' aria-valuemax='100'>65%</div>
                     </div>
                   </ul>
                 </div>
@@ -500,26 +563,32 @@
         </div>
       </div>
 
+      <!--
+        # プロダクト
+      -->
       <div id='my-product'>
-        <div class="rounded-pill border border-info mt-5 mb-3">
+        <div class='rounded-pill border border-info mt-5 mb-3'>
           <h1 class='d-flex align-items-center justify-content-center text-info'>プロダクト</h1>
         </div>
-        <div class="accordion" id="accordionExample">
-          <div class="card alert-warning">
-            <div class="card-header alert-dark" id="my-product-one">
-              <h1 class="d-flex align-items-center justify-content-center">
-                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
-                  aria-expanded="false" aria-controls="collapseOne">
-                  <div class="bg-dark text-white">映画情報自動ツイートbot</div>
-                  <img class="img-thumbnail" src="images/bot_about_movie.png" alt="映画情報自動ツイートの画面" width="400">
+        <div class='accordion' id='accordion-product'>
+          <!--
+            ## 映画情報自動ツイートBOT
+          -->
+          <div class='card alert-warning'>
+            <div class='card-header alert-dark' id='my-product-one'>
+              <h1 class='d-flex align-items-center justify-content-center'>
+                <button class='btn btn-link' type='button' data-toggle='collapse' data-target='#product-collapse-one'
+                  aria-expanded='false' aria-controls='product-collapse-one'>
+                  <div class='bg-dark text-white'>映画情報自動ツイートbot</div>
+                  <img class='img-thumbnail' src='images/bot_about_movie.png' alt='映画情報自動ツイートの画面' width='400'>
                 </button>
               </h1>
             </div>
-            <div id="collapseOne" class="collapse show" aria-labelledby="my-product-one" data-parent="#accordionExample">
-              <div class="card-body">
-                <p class="animation">
-                <div class="show">
-                  <h3 class="card-title"><a href="https://twitter.com/bot_about_movie">映画ランキングbot</a></h3>
+            <div id='product-collapse-one' class='collapse show' aria-labelledby='my-product-one' data-parent='#accordion-product'>
+              <div class='card-body'>
+                <p class='animation'>
+                <div class='show'>
+                  <h3 class='card-title'><a href='https://twitter.com/bot_about_movie'>映画ランキングbot</a></h3>
                   <p>
                     人気映画ランキング１位から21位までを１週間かけて自動でツイートするbot.<br>
                     ツイートしてくれる情報は以下の通り.
@@ -533,7 +602,7 @@
                   </ul>
                   </p>
                   <p>
-                    <a href="https://developers.themoviedb.org/3/getting-started/introduction">TMDb API</a>のGet
+                    <a href='https://developers.themoviedb.org/3/getting-started/introduction'>TMDb API</a>のGet
                     Trendingメソッドと, Twitter REST APIを利用している.
                   </p>
                   <p>
@@ -550,23 +619,26 @@
               </div>
             </div>
           </div>
-          <div class="card alert-warning">
-            <div class="card-header alert-dark" id="heading2">
-              <h1 class="d-flex align-items-center justify-content-center">
-                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse2"
-                  aria-expanded="false" aria-controls="collapse2">
-                  <div class="bg-dark text-white">周辺の映画館やおすすめ映画を教えてくれるLINE bot</div>
-                  <img class="img-thumbnail" src="images/LINEbot_about_movie.jpg" alt="LINE bot about movieの動作画像"
-                    width="250">
-                  <img class="img-thumbnail" src="images/LINEbot_QRcode.png" alt="LINE botのQRコード" width="200">
+          <!--
+            ## 映画LINE BOT
+          -->
+          <div class='card alert-warning'>
+            <div class='card-header alert-dark' id='heading2'>
+              <h1 class='d-flex align-items-center justify-content-center'>
+                <button class='btn btn-link collapsed' type='button' data-toggle='collapse' data-target='#collapse2'
+                  aria-expanded='false' aria-controls='collapse2'>
+                  <div class='bg-dark text-white'>周辺の映画館やおすすめ映画を教えてくれるLINE bot</div>
+                  <img class='img-thumbnail' src='images/LINEbot_about_movie.jpg' alt='LINE bot about movieの動作画像'
+                    width='250'>
+                  <img class='img-thumbnail' src='images/LINEbot_QRcode.png' alt='LINE botのQRコード' width='200'>
                 </button>
               </h1>
             </div>
-            <div id="collapse2" class="collapse show" aria-labelledby="heading2" data-parent="#accordionExample">
-              <div class="card-body">
-                <p class="animation">
-                <div class="show">
-                  <h3 class="card-title">LINE bot about movie</h3>
+            <div id='collapse2' class='collapse show' aria-labelledby='heading2' data-parent='#accordion-product'>
+              <div class='card-body'>
+                <p class='animation'>
+                <div class='show'>
+                  <h3 class='card-title'>LINE bot about movie</h3>
                   <p>
                     LINEの位置情報を送信することによって,
                     指定した範囲, または, 周辺3km以内にある映画館を表示してくれるbot.<br>
@@ -593,28 +665,31 @@
                     将来的には最近の映画や感情の入力によって合いそうな映画を紹介するといった機能を実現することを考えている.
                   </p>
                   <p>（以下の動画は旧バージョンです）</p>
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/_B5pohJC1dE" frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  <iframe width='560' height='315' src='https://www.youtube.com/embed/_B5pohJC1dE' frameborder='0'
+                    allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'
                     allowfullscreen></iframe>
                 </div>
                 </p>
               </div>
             </div>
           </div>
-          <div class="card alert-warning">
-            <div class="card-header alert-dark" id="heading3">
-              <h1 class="d-flex align-items-center justify-content-center">
-                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse3"
-                  aria-expanded="false" aria-controls="collapse3">
-                  <div class="bg-dark text-white">タイタニックの生存予測を行うWebアプリケーション</div>
+          <!--
+            ## タイタニックの生存予測を行うWebアプリケーション
+          -->
+          <div class='card alert-warning'>
+            <div class='card-header alert-dark' id='heading3'>
+              <h1 class='d-flex align-items-center justify-content-center'>
+                <button class='btn btn-link collapsed' type='button' data-toggle='collapse' data-target='#collapse3'
+                  aria-expanded='false' aria-controls='collapse3'>
+                  <div class='bg-dark text-white'>タイタニックの生存予測を行うWebアプリケーション</div>
                 </button>
               </h1>
             </div>
-            <div id="collapse3" class="collapse show" aria-labelledby="heading3" data-parent="#accordionExample">
-              <div class="card-body">
-                <p class="animation">
-                <div class="show">
-                  <h3 class="card-title">タイタニック生存チャレンジ</h3>
+            <div id='collapse3' class='collapse show' aria-labelledby='heading3' data-parent='#accordion-product'>
+              <div class='card-body'>
+                <p class='animation'>
+                <div class='show'>
+                  <h3 class='card-title'>タイタニック生存チャレンジ</h3>
                   <p>
                     あなたが何も知らずにタイタニック号に乗っていたら, 助かったかを予測するWebアプリケーションです.<br>
                     FlaskとJinjaを利用して, 入力データから機械学習を用いて予測します.
@@ -623,28 +698,31 @@
                     ※公開はしていません.ローカル環境です.<br>
                     ※予測精度はあくまで目安であり, 正確ではありません.
                   </p>
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/xkIWJcdZEws" frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  <iframe width='560' height='315' src='https://www.youtube.com/embed/xkIWJcdZEws' frameborder='0'
+                    allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'
                     allowfullscreen></iframe>
                 </div>
                 </p>
               </div>
             </div>
           </div>
-          <div class="card alert-warning">
-            <div class="card-header alert-dark" id="heading4">
-              <h1 class="d-flex align-items-center justify-content-center">
-                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse4"
-                  aria-expanded="false" aria-controls="collapse4">
-                  <div class="bg-dark text-white">三角形の五心(重心・内心・外心・垂心・傍心)の可視化</div>
+          <!--
+            ## 三角形の五心の可視化
+          -->
+          <div class='card alert-warning'>
+            <div class='card-header alert-dark' id='heading4'>
+              <h1 class='d-flex align-items-center justify-content-center'>
+                <button class='btn btn-link collapsed' type='button' data-toggle='collapse' data-target='#collapse4'
+                  aria-expanded='false' aria-controls='collapse4'>
+                  <div class='bg-dark text-white'>三角形の五心(重心・内心・外心・垂心・傍心)の可視化</div>
                 </button>
               </h1>
             </div>
-            <div id="collapse4" class="collapse show" aria-labelledby="heading4" data-parent="#accordionExample">
-              <div class="card-body">
-                <p class="animation">
-                <div class="show">
-                  <h3 class="card-title">Five Centroids of Triangle Visualization</h3>
+            <div id='collapse4' class='collapse show' aria-labelledby='heading4' data-parent='#accordion-product'>
+              <div class='card-body'>
+                <p class='animation'>
+                <div class='show'>
+                  <h3 class='card-title'>Five Centroids of Triangle Visualization</h3>
                   <p>
                     【制作時期】<br>
                     2019/01
@@ -656,7 +734,7 @@
                   </p>
                   <p>
                     【プロジェクト】<br>
-                    <a href="https://github.com/takeYY/fiveCentroids">GitHubのプロジェクトURL</a>
+                    <a href='https://github.com/takeYY/fiveCentroids'>GitHubのプロジェクトURL</a>
                   </p>
                   <p>
                     【環境】<br>
@@ -668,29 +746,32 @@
                     三角形の頂点（A,B,C）はマウスのドラッグで移動可能.
                     「J」キーで重心, 「G」キーで外心, 「N」キーで内心, 「S」キーで垂心, 「B」キーで傍心の特徴を表す線がそれぞれ描画される.
                   </p>
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/Q1QQiOt-vxU" frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  <iframe width='560' height='315' src='https://www.youtube.com/embed/Q1QQiOt-vxU' frameborder='0'
+                    allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'
                     allowfullscreen></iframe>
                 </div>
                 </p>
               </div>
             </div>
           </div>
-          <div class="card alert-warning">
-            <div class="card-header alert-dark" id="headingEtc">
-              <h1 class="mb-0">
-                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseEtc"
-                  aria-expanded="false" aria-controls="collapseEtc">
-                  <div class="bg-dark text-white">その他</div>
-                  <img class="img-thumbnail" src="images/earth.png" alt="開発中の画像">
+          <!--
+            ## その他
+          -->
+          <div class='card alert-warning'>
+            <div class='card-header alert-dark' id='headingEtc'>
+              <h1 class='mb-0'>
+                <button class='btn btn-link collapsed' type='button' data-toggle='collapse' data-target='#collapseEtc'
+                  aria-expanded='false' aria-controls='collapseEtc'>
+                  <div class='bg-dark text-white'>その他</div>
+                  <img class='img-thumbnail' src='images/earth.png' alt='開発中の画像'>
                 </button>
               </h1>
             </div>
-            <div id="collapseEtc" class="collapse show" aria-labelledby="headingEtc" data-parent="#accordionExample">
-              <div class="card-body">
-                <p class="animation">
-                <div class="show">
-                  <h3 class="card-title">開発中</h3>
+            <div id='collapseEtc' class='collapse show' aria-labelledby='headingEtc' data-parent='#accordion-product'>
+              <div class='card-body'>
+                <p class='animation'>
+                <div class='show'>
+                  <h3 class='card-title'>開発中</h3>
                   <p>
                     お楽しみに！
                   </p>
@@ -701,30 +782,34 @@
           </div>
         </div>
       </div>
+
+      <!--
+        # 関連リンク
+      -->
       <div id='my-link'>
-        <div class="rounded-pill border border-primary mt-5 mb-3">
+        <div class='rounded-pill border border-primary mt-5 mb-3'>
           <h1 class='d-flex align-items-center justify-content-center text-primary'>関連リンク</h1>
         </div>
-        <a href="https://github.com/takeyy" target="_blank">
-          <img class="social-icon" src="logo/GitHub_ic.png" alt="GitHub">
+        <a href='https://github.com/takeyy' target='_blank'>
+          <img class='social-icon' src='logo/GitHub_ic.png' alt='GitHub'>
         </a>
-        <a href="https://www.youtube.com/channel/UCJ8WyMiscr7kG1L2oNwOnfA" target="_blank">
-          <img class="social-icon" src="logo/YouTube_ic.png" alt="YouTube">
+        <a href='https://www.youtube.com/channel/UCJ8WyMiscr7kG1L2oNwOnfA' target='_blank'>
+          <img class='social-icon' src='logo/YouTube_ic.png' alt='YouTube'>
         </a>
-        <a href="https://www.kaggle.com/takeyy" target="_blank">
+        <a href='https://www.kaggle.com/takeyy' target='_blank'>
           <img class='social-icon' src='logo/Kaggle_ic.png' alt='Kaggle'>
         </a>
         <a href='https://signate.jp/users/47946' target='_blank'>SIGNATE</a>
 
-        <div id="pageFoot">
+        <div id='pageFoot'>
           <footer>
-            <h3 id="pageFootHeading"></h3>
-            <p class="copyright"><small>&copy Copyright, 2021 All Rights Reserved</small></p>
+            <h3 id='pageFootHeading'></h3>
+            <p class='copyright'><small>&copy Copyright, 2021 All Rights Reserved</small></p>
           </footer>
         </div>
       </div>
+    </div>
   </article>
-  </div>
 </body>
 
 </html>
