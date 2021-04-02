@@ -30,11 +30,29 @@
             takeYY
           </a>
           <ul class='nav nav-pills'>
-            <li class='nav-item'>
-              <a class='nav-link active' href='#my-top'>トップ</a>
+            <li class='nav-item dropdown'>
+              <a class='nav-link dropdown-toggle' href='#' id='myTopDropdown' role='button' data-toggle='dropdown'
+                aria-haspopup='true' aria-expanded='false'>
+                トップ
+              </a>
+              <div class='dropdown-menu' aria-labelledby='myTopDropdown'>
+                <a class='dropdown-item' href='#my-top-one'>情報</a>
+                <a class='dropdown-item' href='#my-top-two'>技術</a>
+                <a class='dropdown-item' href='#my-top-three'>その他</a>
+              </div>
             </li>
-            <li class='nav-item'>
-              <a class='nav-link' href='#my-hobby'>趣味</a>
+            <li class='nav-item dropdown'>
+              <a class='nav-link dropdown-toggle' href='#' id='myHobbyDropdown' role='button' data-toggle='dropdown'
+                aria-haspopup='true' aria-expanded='false'>
+                趣味
+              </a>
+              <div class='dropdown-menu' aria-labelledby='myHobbyDropdown'>
+                <a class='dropdown-item' href='#my-hobby-one'>映画鑑賞</a>
+                <a class='dropdown-item' href='#my-hobby-two'>音楽鑑賞</a>
+                <a class='dropdown-item' href='#my-hobby-three'>PCゲーム</a>
+                <a class='dropdown-item' href='#my-hobby-four'>漫画</a>
+                <a class='dropdown-item' href='#my-hobby-five'>書籍</a>
+              </div>
             </li>
             <li class='nav-item'>
               <a class='nav-link' href='#my-product'>プロダクト</a>
@@ -551,8 +569,13 @@
                     </div>
                     <li>『FACTFULNESS（ファクトフルネス）10の思い込みを乗り越え、データを基に世界を正しく見る習慣』</li>
                     <div class='progress'>
-                      <div class='progress-bar progress-bar-striped progress-bar-animated' role='progressbar' style='width: 65%;'
-                        aria-valuenow='65' aria-valuemin='0' aria-valuemax='100'>65%</div>
+                      <div class='progress-bar bg-success' role='progressbar' style='width: 100%;'
+                        aria-valuenow='100' aria-valuemin='0' aria-valuemax='100'>100%</div>
+                    </div>
+                    <li>『統計学が最強の学問である』</li>
+                    <div class='progress'>
+                      <div class='progress-bar progress-bar-striped progress-bar-animated' role='progressbar' style='width: 67%;'
+                        aria-valuenow='67' aria-valuemin='0' aria-valuemax='100'>67%</div>
                     </div>
                   </ul>
                 </div>
