@@ -23,6 +23,9 @@
   <div class='shutter'></div>
   <article>
     <div id='page'>
+      <!--
+        ヘッダー
+      -->
       <header>
         <nav class='navbar navbar-expand-md navbar-dark fixed-top bg-dark' id='my-navbar'>
           <a class='navbar-brand' href='index.html'>
@@ -78,8 +81,8 @@
           <div class='card alert-warning'>
             <div class='card-header' id='my-top-one'>
               <h1 class='mb-0'>
-                <button class='btn btn-link text-dark' type='button' data-toggle='collapse' data-target='#top-collapse-one'
-                  aria-expanded='true' aria-controls='top-collapse-one'>
+                <button class='btn btn-link text-dark' type='button' data-toggle='collapse'
+                  data-target='#top-collapse-one' aria-expanded='true' aria-controls='top-collapse-one'>
                   私の情報
                 </button>
               </h1>
@@ -119,7 +122,7 @@
             <div id='top-collapse-two' class='collapse show' aria-labelledby='my-top-two' data-parent='#accordion-top'>
               <div class='card-body'>
                 <p class='animation'>
-                <!--
+                  <!--
                   ### 開発経験
                 -->
                 <div class='show'>
@@ -132,6 +135,7 @@
                     </div>
                     <ul>
                       <li>Twitter Bot(@bot_about_movie)</li>
+                      <li>江戸川乱歩作品の可視化システム</li>
                     </ul>
                     <li>Java</li>
                     <div class='progress'>
@@ -181,6 +185,20 @@
                       </li>
                       <li>LINE bot about movie</li>
                     </ul>
+                    <li>Ruby (on Rails)</li>
+                    <div class='progress'>
+                      <div class='progress-bar progress-bar-striped progress-bar-animated' role='progressbar'
+                        style='width: 70%;' aria-valuenow='70' aria-valuemin='0' aria-valuemax='100'>70%</div>
+                    </div>
+                    <ul>
+                      <li>
+                        インターン
+                        <ul>
+                          <li>社内管理システムの改修・テスト</li>
+                          <li>主要サービスの追加機能実装・Feature Spec</li>
+                        </ul>
+                      </li>
+                    </ul>
                     </ur>
                 </div>
                 <!--
@@ -189,38 +207,6 @@
                 <div class='show'>
                   勉強中
                   <ul>
-                    <li>Ruby (on Rails)</li>
-                    <div class='progress'>
-                      <div class='progress-bar progress-bar-striped progress-bar-animated' role='progressbar'
-                        style='width: 70%;' aria-valuenow='70' aria-valuemin='0' aria-valuemax='100'>70%</div>
-                    </div>
-                    <ul>
-                      <li>Slim</li>
-                      <div class='progress'>
-                        <div class='progress-bar progress-bar-striped progress-bar-animated' role='progressbar'
-                          style='width: 80%;' aria-valuenow='80' aria-valuemin='0' aria-valuemax='100'>80%</div>
-                      </div>
-                      <li>Model</li>
-                      <div class='progress'>
-                        <div class='progress-bar progress-bar-striped progress-bar-animated' role='progressbar'
-                          style='width: 60%;' aria-valuenow='60' aria-valuemin='0' aria-valuemax='100'>60%</div>
-                      </div>
-                      <li>Controller</li>
-                      <div class='progress'>
-                        <div class='progress-bar progress-bar-striped progress-bar-animated' role='progressbar'
-                          style='width: 60%;' aria-valuenow='60' aria-valuemin='0' aria-valuemax='100'>60%</div>
-                      </div>
-                      <li>View</li>
-                      <div class='progress'>
-                        <div class='progress-bar progress-bar-striped progress-bar-animated' role='progressbar'
-                          style='width: 80%;' aria-valuenow='80' aria-valuemin='0' aria-valuemax='100'>80%</div>
-                      </div>
-                      <li>Rspec</li>
-                      <div class='progress'>
-                        <div class='progress-bar progress-bar-striped progress-bar-animated' role='progressbar'
-                          style='width: 70%;' aria-valuenow='70' aria-valuemin='0' aria-valuemax='100'>70%</div>
-                      </div>
-                    </ul>
                     <li>React</li>
                     <div class='progress'>
                       <div class='progress-bar progress-bar-striped progress-bar-animated' role='progressbar'
@@ -243,8 +229,8 @@
                     </div>
                     <li>Golang</li>
                     <div class='progress'>
-                      <div class='progress-bar progress-bar-striped progress-bar-animated' role='progressbar' style='width: 5%;'
-                        aria-valuenow='5' aria-valuemin='0' aria-valuemax='100'>5%</div>
+                      <div class='progress-bar progress-bar-striped progress-bar-animated' role='progressbar'
+                        style='width: 5%;' aria-valuenow='5' aria-valuemin='0' aria-valuemax='100'>5%</div>
                     </div>
                     <li>Machine Learning</li>
                     <div class='progress'>
@@ -256,28 +242,13 @@
                       <div class='progress-bar progress-bar-striped progress-bar-animated' role='progressbar'
                         style='width: 20%;' aria-valuenow='20' aria-valuemin='0' aria-valuemax='100'>20%</div>
                     </div>
-                    <li>数学</li>
-                    <div class='progress'>
-                      <div class='progress-bar progress-bar-striped progress-bar-animated' role='progressbar'
-                        style='width: 60%;' aria-valuenow='60' aria-valuemin='0' aria-valuemax='100'>60%</div>
-                    </div>
-                    <li>統計</li>
-                    <div class='progress'>
-                      <div class='progress-bar progress-bar-striped progress-bar-animated' role='progressbar'
-                        style='width: 50%;' aria-valuenow='50' aria-valuemin='0' aria-valuemax='100'>50%</div>
-                    </div>
-                    <li>確率</li>
-                    <div class='progress'>
-                      <div class='progress-bar progress-bar-striped progress-bar-animated' role='progressbar'
-                        style='width: 60%;' aria-valuenow='60' aria-valuemin='0' aria-valuemax='100'>60%</div>
-                    </div>
                     <li>Kaggle</li>
                     <li>SIGNATE</li>
                     <li>AtCoder</li>
                     <li>データサイエンス100本ノック（データ加工編）</li>
                     <div class='progress'>
                       <div class='progress-bar progress-bar-striped progress-bar-animated' role='progressbar'
-                        style='width: 39%;' aria-valuenow='39' aria-valuemin='0' aria-valuemax='100'>39%</div>
+                        style='width: 43%;' aria-valuenow='43' aria-valuemin='0' aria-valuemax='100'>43%</div>
                     </div>
                     <li>Python実践データ分析100本ノック</li>
                     <div class='progress'>
@@ -301,8 +272,8 @@
           <div class='card alert-warning'>
             <div class='card-header' id='my-top-three'>
               <h1 class='mb-0'>
-                <button class='btn btn-link text-dark' type='button' data-toggle='collapse' data-target='#top-collapse-three'
-                  aria-expanded='true' aria-controls='top-collapse-three'>
+                <button class='btn btn-link text-dark' type='button' data-toggle='collapse'
+                  data-target='#top-collapse-three' aria-expanded='true' aria-controls='top-collapse-three'>
                   その他触れたことのある技術・サービス等
                 </button>
               </h1>
@@ -375,6 +346,7 @@
                       <li>Git</li>
                       <li>Trello</li>
                       <li>Redmine</li>
+                      <li>Notion</li>
                     </ul>
                 </div>
                 </p>
@@ -398,13 +370,14 @@
           <div class='card alert-warning'>
             <div class='card-header' id='my-hobby-one'>
               <h1 class='mb-0'>
-                <button class='btn btn-link text-dark' type='button' data-toggle='collapse' data-target='#hobby-collapse-one'
-                  aria-expanded='true' aria-controls='hobby-collapse-one'>
+                <button class='btn btn-link text-dark' type='button' data-toggle='collapse'
+                  data-target='#hobby-collapse-one' aria-expanded='true' aria-controls='hobby-collapse-one'>
                   映画鑑賞
                 </button>
               </h1>
             </div>
-            <div id='hobby-collapse-one' class='collapse show' aria-labelledby='my-hobby-one' data-parent='#accordion-hobby'>
+            <div id='hobby-collapse-one' class='collapse show' aria-labelledby='my-hobby-one'
+              data-parent='#accordion-hobby'>
               <div class='card-body'>
                 <p class='animation'>
                 <div class='show'>
@@ -458,7 +431,8 @@
                 </button>
               </h1>
             </div>
-            <div id='hobby-collapse-two' class='collapse show' aria-labelledby='my-hobby-two' data-parent='#accordion-hobby'>
+            <div id='hobby-collapse-two' class='collapse show' aria-labelledby='my-hobby-two'
+              data-parent='#accordion-hobby'>
               <div class='card-body'>
                 <p class='animation'>
                 <div class='show'>
@@ -527,7 +501,8 @@
                 </button>
               </h1>
             </div>
-            <div id='hobby-collapse-four' class='collapse show' aria-labelledby='my-hobby-four' data-parent='#accordion-hobby'>
+            <div id='hobby-collapse-four' class='collapse show' aria-labelledby='my-hobby-four'
+              data-parent='#accordion-hobby'>
               <div class='card-body'>
                 <p class='animation'>
                 <div class='show'>
@@ -551,31 +526,32 @@
           <div class='card alert-warning'>
             <div class='card-header' id='my-hobby-five'>
               <h1 class='mb-0'>
-                <button class='btn btn-link collapsed text-dark' type='button' data-toggle='collapse' data-target='#hobby-collapse-five'
-                  aria-expanded='false' aria-controls='hobby-collapse-five'>
+                <button class='btn btn-link collapsed text-dark' type='button' data-toggle='collapse'
+                  data-target='#hobby-collapse-five' aria-expanded='false' aria-controls='hobby-collapse-five'>
                   書籍
                 </button>
               </h1>
             </div>
-            <div id='hobby-collapse-five' class='collapse show' aria-labelledby='my-hobby-five' data-parent='#accordion-hobby'>
+            <div id='hobby-collapse-five' class='collapse show' aria-labelledby='my-hobby-five'
+              data-parent='#accordion-hobby'>
               <div class='card-body'>
                 <p class='animation'>
                 <div class='show'>
                   <ul>
                     <li>『Kaggleで勝つデータ分析の技術』</li>
                     <div class='progress'>
-                      <div class='progress-bar progress-bar-striped progress-bar-animated' role='progressbar' style='width: 85%;'
-                        aria-valuenow='85' aria-valuemin='0' aria-valuemax='100'>85%</div>
+                      <div class='progress-bar progress-bar-striped progress-bar-animated' role='progressbar'
+                        style='width: 85%;' aria-valuenow='85' aria-valuemin='0' aria-valuemax='100'>85%</div>
                     </div>
                     <li>『FACTFULNESS（ファクトフルネス）10の思い込みを乗り越え、データを基に世界を正しく見る習慣』</li>
                     <div class='progress'>
-                      <div class='progress-bar bg-success' role='progressbar' style='width: 100%;'
-                        aria-valuenow='100' aria-valuemin='0' aria-valuemax='100'>100%</div>
+                      <div class='progress-bar bg-success' role='progressbar' style='width: 100%;' aria-valuenow='100'
+                        aria-valuemin='0' aria-valuemax='100'>100%</div>
                     </div>
                     <li>『統計学が最強の学問である』</li>
                     <div class='progress'>
-                      <div class='progress-bar progress-bar-striped progress-bar-animated' role='progressbar' style='width: 67%;'
-                        aria-valuenow='67' aria-valuemin='0' aria-valuemax='100'>67%</div>
+                      <div class='progress-bar progress-bar-striped progress-bar-animated' role='progressbar'
+                        style='width: 67%;' aria-valuenow='67' aria-valuemin='0' aria-valuemax='100'>67%</div>
                     </div>
                   </ul>
                 </div>
@@ -607,7 +583,8 @@
                 </button>
               </h1>
             </div>
-            <div id='product-collapse-one' class='collapse show' aria-labelledby='my-product-one' data-parent='#accordion-product-1'>
+            <div id='product-collapse-one' class='collapse show' aria-labelledby='my-product-one'
+              data-parent='#accordion-product-1'>
               <div class='card-body'>
                 <p class='animation'>
                 <div class='show'>
