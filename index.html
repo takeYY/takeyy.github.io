@@ -3,7 +3,7 @@
 
 <head>
   <meta charset='utf-8'>
-  <title>takeYYのHP</title>
+  <title>HP | takeYY</title>
   <link rel='stylesheet' , href='css/style.css'>
   <link rel='stylesheet' href='css/self-introduction.css'>
   <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css'
@@ -19,7 +19,7 @@
     crossorigin='anonymous'></script>
 </head>
 
-<body data-spy='scroll' data-target='#my-navbar' data-offset='100' class='gradient' oncontextmenu='return false;'>
+<body data-spy='scroll' data-target='#my-navbar' data-offset='100' class='gradient'>
   <div class='shutter'></div>
   <article>
     <div id='page'>
@@ -39,22 +39,10 @@
                 トップ
               </a>
               <div class='dropdown-menu' aria-labelledby='myTopDropdown'>
-                <a class='dropdown-item' href='#my-top-one'>情報</a>
-                <a class='dropdown-item' href='#my-top-two'>技術</a>
-                <a class='dropdown-item' href='#my-top-three'>その他</a>
-              </div>
-            </li>
-            <li class='nav-item dropdown'>
-              <a class='nav-link dropdown-toggle' href='#' id='myHobbyDropdown' role='button' data-toggle='dropdown'
-                aria-haspopup='true' aria-expanded='false'>
-                趣味
-              </a>
-              <div class='dropdown-menu' aria-labelledby='myHobbyDropdown'>
-                <a class='dropdown-item' href='#my-hobby-one'>映画鑑賞</a>
-                <a class='dropdown-item' href='#my-hobby-two'>音楽鑑賞</a>
-                <a class='dropdown-item' href='#my-hobby-three'>PCゲーム</a>
-                <a class='dropdown-item' href='#my-hobby-four'>漫画</a>
-                <a class='dropdown-item' href='#my-hobby-five'>書籍</a>
+                <a class='dropdown-item' href='#my-top-info'>情報</a>
+                <a class='dropdown-item' href='#my-top-tech'>技術</a>
+                <a class='dropdown-item' href='#my-top-read'>読書</a>
+                <a class='dropdown-item' href='#my-top-etc'>その他</a>
               </div>
             </li>
             <li class='nav-item'>
@@ -79,31 +67,25 @@
             ## 私の情報
           -->
           <div class='card alert-warning'>
-            <div class='card-header' id='my-top-one'>
+            <div class='card-header' id='my-top-info'>
               <h1 class='mb-0'>
                 <button class='btn btn-link text-dark' type='button' data-toggle='collapse'
-                  data-target='#top-collapse-one' aria-expanded='true' aria-controls='top-collapse-one'>
-                  私の情報
+                  data-target='#top-collapse-info' aria-expanded='true' aria-controls='top-collapse-info'>
+                  情報
                 </button>
               </h1>
             </div>
-            <div id='top-collapse-one' class='collapse show' aria-labelledby='my-top-one' data-parent='#accordion-top'>
+            <div id='top-collapse-info' class='collapse show' aria-labelledby='my-top-info' data-parent='#accordion-top'>
               <div class='card-body'>
-                <p class='animation'>
                 <div class='show row'>
                   <div class='col-sm-4 col-md-4'>
-                    <h2 id='header' class='face'>takeYY</h2>
-                    <script src='animation.js'></script>
+                    <h2 class='face'>takeYY</h2>
                     <img id='icon' src='images/RamielScrew200x200.jpg' width='180' alt='takeYYのアイコン'>
                   </div>
                   <div class='col-sm-4 col-md-8 d-flex align-items-center'>
-                    <ul>
-                      <li>年齢：23</li>
-                      <li>職業：学生</li>
-                    </ul>
+                    面倒なことは自動化しちまえ！
                   </div>
                 </div>
-                </p>
               </div>
             </div>
           </div>
@@ -111,7 +93,7 @@
             ## 技術
           -->
           <div class='card alert-warning'>
-            <div class='card-header' id='my-top-two'>
+            <div class='card-header' id='my-top-tech'>
               <h1 class='mb-0'>
                 <button class='btn btn-link collapsed text-dark' type='button' data-toggle='collapse'
                   data-target='#top-collapse-two' aria-expanded='false' aria-controls='top-collapse-two'>
@@ -119,11 +101,10 @@
                 </button>
               </h1>
             </div>
-            <div id='top-collapse-two' class='collapse show' aria-labelledby='my-top-two' data-parent='#accordion-top'>
+            <div id='top-collapse-two' class='collapse show' aria-labelledby='my-top-tech' data-parent='#accordion-top'>
               <div class='card-body'>
-                <p class='animation'>
-                  <!--
-                  ### 開発経験
+                <!--
+                ### 開発経験
                 -->
                 <div class='show'>
                   開発経験
@@ -199,7 +180,7 @@
                         </ul>
                       </li>
                     </ul>
-                    </ur>
+                  </ul>
                 </div>
                 <!--
                   ### 勉強中
@@ -262,15 +243,73 @@
                     </div>
                   </ul>
                 </div>
-                </p>
               </div>
             </div>
           </div>
           <!--
+            ## 読書
+          -->
+          <div class='card alert-warning'>
+            <div class='card-header' id='my-top-read'>
+              <h1 class='mb-0'>
+                <button class='btn btn-link collapsed text-dark' type='button' data-toggle='collapse'
+                  data-target='#top-collapse-read' aria-expanded='false' aria-controls='top-collapse-read'>
+                  読書
+                </button>
+              </h1>
+            </div>
+            <div id='top-collapse-read' class='collapse show' aria-labelledby='my-top-read'
+              data-parent='#accordion-hobby'>
+              <div class='card-body'>
+                <div class='show'>
+                  <ul>
+                    <li>『Kaggleで勝つデータ分析の技術』</li>
+                    <div class='progress'>
+                      <div class='progress-bar progress-bar-striped progress-bar-animated' role='progressbar'
+                        style='width: 85%;' aria-valuenow='85' aria-valuemin='0' aria-valuemax='100'>85%</div>
+                    </div>
+                    <li>『FACTFULNESS 10の思い込みを乗り越え、データを基に世界を正しく見る習慣』</li>
+                    <div class='progress'>
+                      <div class='progress-bar bg-success' role='progressbar' style='width: 100%;' aria-valuenow='100'
+                        aria-valuemin='0' aria-valuemax='100'>100%</div>
+                    </div>
+                    <li>『統計学が最強の学問である』</li>
+                    <div class='progress'>
+                      <div class='progress-bar bg-success' role='progressbar' style='width: 100%;' aria-valuenow='100'
+                        aria-valuemin='0' aria-valuemax='100'>100%</div>
+                    </div>
+                    <li>『AI vs. 教科書が読めない子供たち』</li>
+                    <div class='progress'>
+                      <div class='progress-bar bg-success' role='progressbar' style='width: 100%;' aria-valuenow='100'
+                        aria-valuemin='0' aria-valuemax='100'>100%</div>
+                    </div>
+                    <li>『統計学が最強の学問である[数学編]』</li>
+                    <div class='progress'>
+                      <div class='progress-bar bg-success' role='progressbar'
+                        style='width: 100%;' aria-valuenow='100' aria-valuemin='0' aria-valuemax='100'>100%</div>
+                    </div>
+                    <li>『統計学が最強の学問である[実践編]』</li>
+                    <div class='progress'>
+                      <div class='progress-bar bg-success' role='progressbar' style='width: 100%;' aria-valuenow='100'
+                        aria-valuemin='0' aria-valuemax='100'>100%</div>
+                    </div>
+                    <li>『ビジョナリー・カンパニー2 飛躍の法則』</li>
+                    <div class='progress'>
+                      <div class='progress-bar progress-bar-striped progress-bar-animated' role='progressbar'
+                        style='width: 8%;' aria-valuenow='8' aria-valuemin='0' aria-valuemax='100'>8%</div>
+                    </div>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!--
             ## その他触れたことのある技術・サービス等
           -->
           <div class='card alert-warning'>
-            <div class='card-header' id='my-top-three'>
+            <div class='card-header' id='my-top-etc'>
               <h1 class='mb-0'>
                 <button class='btn btn-link text-dark' type='button' data-toggle='collapse'
                   data-target='#top-collapse-three' aria-expanded='true' aria-controls='top-collapse-three'>
@@ -278,10 +317,9 @@
                 </button>
               </h1>
             </div>
-            <div id='top-collapse-three' class='collapse show' aria-labelledby='my-top-three'
+            <div id='top-collapse-three' class='collapse show' aria-labelledby='my-top-etc'
               data-parent='#accordion-top'>
               <div class='card-body'>
-                <p class='animation'>
                 <div class='show'>
                   <ul>
                     <!--
@@ -348,209 +386,8 @@
                       <li>Redmine</li>
                       <li>Notion</li>
                     </ul>
-                </div>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!--
-        # 趣味
-      -->
-      <div id='my-hobby'>
-        <div class='rounded-pill border border-warning mt-5 mb-3'>
-          <h1 class='d-flex align-items-center justify-content-center text-warning'>趣味</h1>
-        </div>
-        <div class='accordion' id='accordion-hobby'>
-          <!--
-            ## 映画鑑賞
-          -->
-          <div class='card alert-warning'>
-            <div class='card-header' id='my-hobby-one'>
-              <h1 class='mb-0'>
-                <button class='btn btn-link text-dark' type='button' data-toggle='collapse'
-                  data-target='#hobby-collapse-one' aria-expanded='true' aria-controls='hobby-collapse-one'>
-                  映画鑑賞
-                </button>
-              </h1>
-            </div>
-            <div id='hobby-collapse-one' class='collapse show' aria-labelledby='my-hobby-one'
-              data-parent='#accordion-hobby'>
-              <div class='card-body'>
-                <p class='animation'>
-                <div class='show'>
-                  <ul>
-                    <li>マイ・インターン</li>
-                    <li>ショーシャンクの空に</li>
-                    <li>帝一の國</li>
-                    <li>鈴木先生（ドラマ・映画）</li>
-                    <li>ダンサー・イン・ザ・ダーク</li>
-                    <li>プレステージ</li>
-                    <li>レオン</li>
-                    <li>A.I.</li>
-                    <li>スタンド・バイ・ミー</li>
-                    <li>ハングオーバー</li>
-                    <li>華麗なるギャッツビー</li>
-                    <li>インサイド・ヘッド</li>
-                    <li>ウォーリー</li>
-                    <li>トイ・ストーリー4</li>
-                    <li>ソウルフル・ワールド</li>
                   </ul>
                 </div>
-                </p>
-              </div>
-            </div>
-          </div>
-          <!--
-            ## 音楽鑑賞
-          -->
-          <div class='card alert-warning'>
-            <div class='card-header' id='my-hobby-two'>
-              <h1 class='mb-0'>
-                <button class='btn btn-link collapsed text-dark' type='button' data-toggle='collapse'
-                  data-target='#hobby-collapse-two' aria-expanded='false' aria-controls='hobby-collapse-two'>
-                  音楽鑑賞
-                </button>
-              </h1>
-            </div>
-            <div id='hobby-collapse-two' class='collapse show' aria-labelledby='my-hobby-two'
-              data-parent='#accordion-hobby'>
-              <div class='card-body'>
-                <p class='animation'>
-                <div class='show'>
-                  <ul>
-                    <li>BUMP OF CHICKEN</li>
-                    <ul>
-                      <li>ギルド</li>
-                      <li>ゼロ</li>
-                      <li>Butterfly</li>
-                    </ul>
-                    <li>ONE OK ROCK</li>
-                    <ul>
-                      <li>Be the light</li>
-                      <li>Stand Out Fit In</li>
-                      <li>Borderline</li>
-                    </ul>
-                    <li>Judy And Mary</li>
-                    <ul>
-                      <li>ラッキープール</li>
-                      <li>散歩道</li>
-                      <li>BLUE TEARS</li>
-                      <li>DAYDREAM</li>
-                    </ul>
-                  </ul>
-                </div>
-                </p>
-              </div>
-            </div>
-          </div>
-          <!--
-            ## PCゲーム
-          -->
-          <div class='card alert-warning'>
-            <div class='card-header' id='my-hobby-three'>
-              <h1 class='mb-0'>
-                <button class='btn btn-link collapsed text-dark' type='button' data-toggle='collapse'
-                  data-target='#hobby-collapse-three' aria-expanded='false' aria-controls='hobby-collapse-three'>
-                  PCゲーム
-                </button>
-              </h1>
-            </div>
-            <div id='hobby-collapse-three' class='collapse show' aria-labelledby='my-hobby-three'
-              data-parent='#accordion-hobby'>
-              <div class='card-body'>
-                <p class='animation'>
-                <div class='show'>
-                  <ul>
-                    <li>Apex Legends</li>
-                    <li>MONSTER HUNTER: WORLD</li>
-                    <li>Watch Dogs</li>
-                  </ul>
-                </div>
-                </p>
-              </div>
-            </div>
-          </div>
-          <!--
-            ## 漫画
-          -->
-          <div class='card alert-warning'>
-            <div class='card-header' id='my-hobby-four'>
-              <h1 class='mb-0'>
-                <button class='btn btn-link collapsed text-dark' type='button' data-toggle='collapse'
-                  data-target='#hobby-collapse-four' aria-expanded='false' aria-controls='hobby-collapse-four'>
-                  漫画
-                </button>
-              </h1>
-            </div>
-            <div id='hobby-collapse-four' class='collapse show' aria-labelledby='my-hobby-four'
-              data-parent='#accordion-hobby'>
-              <div class='card-body'>
-                <p class='animation'>
-                <div class='show'>
-                  <ul>
-                    <li>宇宙兄弟</li>
-                    <li>鈴木先生</li>
-                    <li>3月のライオン</li>
-                    <li>NARUTO</li>
-                    <li>アルキメデスの大戦</li>
-                    <li>BLUE GIANT</li>
-                    <li>逃げるは恥だが役に立つ</li>
-                    <li>ランウェイで笑って</li>
-                  </ul>
-                </div>
-                </p>
-              </div>
-            </div>
-          </div>
-          <!--
-            ## 書籍
-          -->
-          <div class='card alert-warning'>
-            <div class='card-header' id='my-hobby-five'>
-              <h1 class='mb-0'>
-                <button class='btn btn-link collapsed text-dark' type='button' data-toggle='collapse'
-                  data-target='#hobby-collapse-five' aria-expanded='false' aria-controls='hobby-collapse-five'>
-                  書籍
-                </button>
-              </h1>
-            </div>
-            <div id='hobby-collapse-five' class='collapse show' aria-labelledby='my-hobby-five'
-              data-parent='#accordion-hobby'>
-              <div class='card-body'>
-                <p class='animation'>
-                <div class='show'>
-                  <ul>
-                    <li>『Kaggleで勝つデータ分析の技術』</li>
-                    <div class='progress'>
-                      <div class='progress-bar progress-bar-striped progress-bar-animated' role='progressbar'
-                        style='width: 85%;' aria-valuenow='85' aria-valuemin='0' aria-valuemax='100'>85%</div>
-                    </div>
-                    <li>『FACTFULNESS（ファクトフルネス）10の思い込みを乗り越え、データを基に世界を正しく見る習慣』</li>
-                    <div class='progress'>
-                      <div class='progress-bar bg-success' role='progressbar' style='width: 100%;' aria-valuenow='100'
-                        aria-valuemin='0' aria-valuemax='100'>100%</div>
-                    </div>
-                    <li>『統計学が最強の学問である』</li>
-                    <div class='progress'>
-                      <div class='progress-bar bg-success' role='progressbar' style='width: 100%;' aria-valuenow='100'
-                        aria-valuemin='0' aria-valuemax='100'>100%</div>
-                    </div>
-                    <li>『AI vs. 教科書が読めない子供たち』</li>
-                    <div class='progress'>
-                      <div class='progress-bar bg-success' role='progressbar' style='width: 100%;' aria-valuenow='100'
-                        aria-valuemin='0' aria-valuemax='100'>100%</div>
-                    </div>
-                    <li>『統計学が最強の学問である[数学編]』</li>
-                    <div class='progress'>
-                      <div class='progress-bar progress-bar-striped progress-bar-animated' role='progressbar'
-                        style='width: 52%;' aria-valuenow='100' aria-valuemin='0' aria-valuemax='52'>52%</div>
-                    </div>
-                  </ul>
-                </div>
-                </p>
               </div>
             </div>
           </div>
@@ -581,7 +418,6 @@
             <div id='product-collapse-one' class='collapse show' aria-labelledby='my-product-one'
               data-parent='#accordion-product-1'>
               <div class='card-body'>
-                <p class='animation'>
                 <div class='show'>
                   <h3 class='card-title'><a href='https://twitter.com/bot_about_movie'>映画ランキングbot</a></h3>
                   <p>
@@ -610,7 +446,6 @@
                     第三四分位数までなら「高」, それ以上なら「極高」としている.
                   </p>
                 </div>
-                </p>
               </div>
             </div>
           </div>
@@ -633,7 +468,6 @@
             </div>
             <div id='collapse2' class='collapse show' aria-labelledby='heading2' data-parent='#accordion-product-2'>
               <div class='card-body'>
-                <p class='animation'>
                 <div class='show'>
                   <h3 class='card-title'>LINE bot about movie</h3>
                   <p>
@@ -666,7 +500,6 @@
                     allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'
                     allowfullscreen></iframe>
                 </div>
-                </p>
               </div>
             </div>
           </div>
@@ -686,7 +519,6 @@
             </div>
             <div id='collapse3' class='collapse show' aria-labelledby='heading3' data-parent='#accordion-product-3'>
               <div class='card-body'>
-                <p class='animation'>
                 <div class='show'>
                   <h3 class='card-title'>タイタニック生存チャレンジ</h3>
                   <p>
@@ -701,7 +533,6 @@
                     allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'
                     allowfullscreen></iframe>
                 </div>
-                </p>
               </div>
             </div>
           </div>
@@ -721,7 +552,6 @@
             </div>
             <div id='collapse4' class='collapse show' aria-labelledby='heading4' data-parent='#accordion-product-4'>
               <div class='card-body'>
-                <p class='animation'>
                 <div class='show'>
                   <h3 class='card-title'>Five Centroids of Triangle Visualization</h3>
                   <p>
@@ -751,7 +581,6 @@
                     allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'
                     allowfullscreen></iframe>
                 </div>
-                </p>
               </div>
             </div>
           </div>
@@ -772,14 +601,12 @@
             </div>
             <div id='collapseEtc' class='collapse show' aria-labelledby='headingEtc' data-parent='#accordion-product-5'>
               <div class='card-body'>
-                <p class='animation'>
                 <div class='show'>
                   <h3 class='card-title'>開発中</h3>
                   <p>
                     お楽しみに！
                   </p>
                 </div>
-                </p>
               </div>
             </div>
           </div>
@@ -811,7 +638,7 @@
       <div id='pageFoot'>
         <footer>
           <h3 id='pageFootHeading'></h3>
-          <p class='copyright'><small>&copy Copyright, 2021 All Rights Reserved</small></p>
+          <p class='copyright'><small>&copy 2022 takeYY - <a href='https://twitter.com/take_Y_Y' target='_blank'>@take_Y_Y</small></p>
         </footer>
       </div>
     </div>
